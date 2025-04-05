@@ -13,4 +13,12 @@ public class Cap
     public void checkMaterial(){
         System.out.println("Remove hat");
     }
+
+    public void adjustStrap() {
+        System.out.println("Adjusting the strap for a snug fit");
+    }
+
+    public void fold() {
+        System.out.println("Folding the cap for easy storage");
+    }
 }

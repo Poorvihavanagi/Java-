@@ -2,24 +2,33 @@ package com.xworkz.inheritance;
 
 public class Skill extends MartialArts {
 
+    @Override
     public void practice() {
         super.practice();
-        System.out.println("Developing precision and accuracy in martial arts...");
+        System.out.println("Running practice in skill");
     }
+
+    @Override
     public void spar() {
         super.spar();
-        System.out.println("Enhancing fighting skills through sparring...");
+        System.out.println("Running spar in skill");
     }
+
+    @Override
     public void performKata() {
         super.performKata();
-        System.out.println("Perfecting the movements of kata with skill...");
+        System.out.println("Running perform kata in skill");
     }
+
+    @Override
     public void increaseStamina() {
         super.increaseStamina();
-        System.out.println("Building endurance to master martial arts skills...");
+        System.out.println("Running increase stamina in skill");
     }
+
+    @Override
     public void learnDiscipline() {
         super.learnDiscipline();
-        System.out.println("Applying martial arts discipline to everyday life...");
+        System.out.println("Running learn discipline in skill");
     }
 }

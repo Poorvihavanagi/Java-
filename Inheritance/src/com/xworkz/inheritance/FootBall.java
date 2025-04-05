@@ -5,30 +5,30 @@ public class FootBall extends Sport {
     @Override
     public void startGame() {
         super.startGame();
-        System.out.println("Starting the football match...");
+        System.out.println("Running start Game in football...");
     }
 
     @Override
     public void play() {
         super.play();
-        System.out.println("Kicking the ball and passing...");
+        System.out.println("Running play in football...");
     }
 
     @Override
     public void score() {
         super.score();
-        System.out.println("Scoring a goal in football!");
+        System.out.println("Running score in football...");
     }
 
     @Override
     public void pause() {
         super.pause();
-        System.out.println("Half-time break in football...");
+        System.out.println("Running pause in football...");
     }
 
     @Override
     public void endGame() {
         super.endGame();
-        System.out.println("Blowing the final whistle in football...");
+        System.out.println("Running end Game in football...");
     }
 }

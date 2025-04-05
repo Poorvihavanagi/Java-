@@ -1,28 +1,34 @@
 package com.xworkz.inheritance;
 
-public class WoodenDoor extends Door{
+public class WoodenDoor extends Door {
+
+    @Override
     public void open() {
         super.open();
-        System.out.println("Opening the wooden door...");
+        System.out.println("Running open in wooden door...");
     }
 
+    @Override
     public void close() {
         super.close();
-        System.out.println("Closing the wooden door...");
+        System.out.println("Running close in wooden door...");
     }
 
+    @Override
     public void lock() {
         super.lock();
-        System.out.println("Locking the wooden door...");
+        System.out.println("Running lock in wooden door...");
     }
 
+    @Override
     public void unlock() {
         super.unlock();
-        System.out.println("Unlocking the wooden door...");
+        System.out.println("Running unlock in wooden door...");
     }
 
+    @Override
     public void checkMaterial() {
         super.checkMaterial();
-        System.out.println("The door is made of wood...");
+        System.out.println("Running check Material in wooden door...");
     }
 }

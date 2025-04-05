@@ -2,28 +2,33 @@ package com.xworkz.inheritance;
 
 public class BagPack extends Bag {
 
+    @Override
     public void open() {
         super.open();
-        System.out.println("Opening the backpack with zippers...");
+        System.out.println("Running open in BagPack");
     }
 
+    @Override
     public void close() {
         super.close();
-        System.out.println("Closing the backpack securely...");
+        System.out.println("Running close in BagPack");
     }
 
+    @Override
     public void carry() {
         super.carry();
-        System.out.println("Carrying the backpack on shoulders...");
+        System.out.println("Running carry in BagPack");
     }
 
+    @Override
     public void checkCapacity() {
         super.checkCapacity();
-        System.out.println("Checking the backpack's capacity for school books...");
+        System.out.println("Running checkCapacity in BagPack");
     }
 
+    @Override
     public void organizeItems() {
         super.organizeItems();
-        System.out.println("Organizing books and laptop inside the backpack...");
+        System.out.println("Running organizeItems in BagPack");
     }
 }

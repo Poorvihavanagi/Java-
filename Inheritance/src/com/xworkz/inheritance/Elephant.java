@@ -1,29 +1,34 @@
 package com.xworkz.inheritance;
 
-public class Elephant extends Mammal
-{
+public class Elephant extends Mammal {
+
+    @Override
     public void eat() {
         super.eat();
-        System.out.println("Elephants eat plants and fruits...");
+        System.out.println("Running eat in elephant...");
     }
 
+    @Override
     public void sleep() {
         super.sleep();
-        System.out.println("Elephants sleep standing up...");
+        System.out.println("Running sleep in elephant...");
     }
 
+    @Override
     public void walk() {
         super.walk();
-        System.out.println("Elephants walk slowly due to their large size...");
+        System.out.println("Running walk in elephant...");
     }
 
+    @Override
     public void breathe() {
         super.breathe();
-        System.out.println("Elephants breathe through their trunks...");
+        System.out.println("Running breathe in elephant...");
     }
 
+    @Override
     public void giveBirth() {
         super.giveBirth();
-        System.out.println("Elephants give birth to calves after a long gestation period...");
+        System.out.println("Running giveBirth in elephant...");
     }
 }

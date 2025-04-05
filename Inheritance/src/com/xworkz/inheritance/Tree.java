@@ -1,26 +1,34 @@
 package com.xworkz.inheritance;
 
 public class Tree extends Plant {
+
     @Override
     public void grow() {
         super.grow();
-        System.out.println("The tree is growing tall and strong...");
+        System.out.println("Running grow in tree...");
     }
 
+    @Override
     public void produceOxygen() {
         super.produceOxygen();
-        System.out.println("The tree produces a large amount of oxygen...");
+        System.out.println("Running produce oxygen in tree...");
     }
 
+    @Override
     public void photosynthesis() {
-        System.out.println("The tree provides shade to animals and humans...");
+        super.photosynthesis();
+        System.out.println("Running photosynthesis in tree...");
     }
 
+    @Override
     public void absorbWater() {
-        System.out.println("Some trees bear delicious fruits...");
+        super.absorbWater();
+        System.out.println("Running absorb water in tree...");
     }
 
+    @Override
     public void bloom() {
-        System.out.println("The tree sheds leaves in autumn...");
+        super.bloom();
+        System.out.println("Running bloom in tree...");
     }
 }

@@ -4,26 +4,26 @@ public class Rose extends Flower {
 
     public void bloom() {
         super.bloom();
-        System.out.println("The rose is blooming beautifully...");
+        System.out.println("Running bloom in Rose");
     }
 
     public void smell() {
         super.smell();
-        System.out.println("The rose has a strong, sweet fragrance...");
+        System.out.println("Running smell in Rose");
     }
 
     public void photosynthesize() {
         super.photosynthesize();
-        System.out.println("The rose is producing energy through photosynthesis...");
+        System.out.println("Running photosynthesize in Rose");
     }
 
     public void attractBees() {
         super.attractBees();
-        System.out.println("The rose is attracting bees with its vibrant color...");
+        System.out.println("Running attractBees in Rose");
     }
 
     public void wither() {
         super.wither();
-        System.out.println("The rose is slowly wilting away...");
+        System.out.println("Running wither in Rose");
     }
 }

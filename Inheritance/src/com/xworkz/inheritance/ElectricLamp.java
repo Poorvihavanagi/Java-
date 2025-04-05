@@ -1,28 +1,34 @@
 package com.xworkz.inheritance;
 
 public class ElectricLamp extends Lamp {
+
+    @Override
     public void turnOn() {
         super.turnOn();
-        System.out.println("Electric lamp is now glowing...");
+        System.out.println("Running turn On in electric lamp...");
     }
 
+    @Override
     public void turnOff() {
         super.turnOff();
-        System.out.println("Electric lamp is switched off...");
+        System.out.println("Running turn Off in electric lamp...");
     }
 
+    @Override
     public void adjustBrightness() {
         super.adjustBrightness();
-        System.out.println("Electric lamp brightness is adjusted...");
+        System.out.println("Running adjust Brightness in electric lamp...");
     }
 
+    @Override
     public void checkBulb() {
         super.checkBulb();
-        System.out.println("Checking if the electric lamp’s bulb needs replacement...");
+        System.out.println("Running check Bulb in electric lamp...");
     }
 
+    @Override
     public void clean() {
         super.clean();
-        System.out.println("Wiping the electric lamp with a cloth...");
+        System.out.println("Running clean in electric lamp...");
     }
 }

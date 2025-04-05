@@ -2,24 +2,33 @@ package com.xworkz.inheritance;
 
 public class Makeup extends Cosmetic {
 
+    @Override
     public void apply() {
         super.apply();
-        System.out.println("Applying makeup on the face.");
+        System.out.println("Running apply in makeup");
     }
+
+    @Override
     public void remove() {
         super.remove();
-        System.out.println("Removing makeup using a cleanser.");
+        System.out.println("Running remove in makeup");
     }
+
+    @Override
     public void checkIngredients() {
         super.checkIngredients();
-        System.out.println("Checking if the makeup is suitable for skin type.");
+        System.out.println("Running check Ingredients in makeup");
     }
+
+    @Override
     public void smell() {
         super.smell();
-        System.out.println("Smelling the mild fragrance of the makeup product.");
+        System.out.println("Running smell in makeup");
     }
+
+    @Override
     public void store() {
         super.store();
-        System.out.println("Storing makeup in a dry and cool place.");
+        System.out.println("Running store in makeup");
     }
 }

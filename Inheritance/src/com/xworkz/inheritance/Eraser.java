@@ -1,24 +1,34 @@
 package com.xworkz.inheritance;
 
 public class Eraser extends Stationery {
+
+    @Override
     public void use() {
         super.use();
-        System.out.println("Using the eraser to remove pencil marks...");
+        System.out.println("Running use in eraser...");
     }
+
+    @Override
     public void store() {
         super.store();
-        System.out.println("Storing the eraser in a pencil box...");
+        System.out.println("Running store in eraser...");
     }
+
+    @Override
     public void checkQuality() {
         super.checkQuality();
-        System.out.println("Checking the softness of the eraser...");
+        System.out.println("Running checkQuality in eraser...");
     }
+
+    @Override
     public void replace() {
         super.replace();
-        System.out.println("Replacing the eraser with a new one...");
+        System.out.println("Running replace in eraser...");
     }
+
+    @Override
     public void dispose() {
         super.dispose();
-        System.out.println("Disposing of the worn-out eraser...");
+        System.out.println("Running dispose in eraser...");
     }
 }

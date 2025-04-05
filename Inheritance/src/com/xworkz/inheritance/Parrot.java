@@ -1,28 +1,34 @@
 package com.xworkz.inheritance;
 
 public class Parrot extends Bird {
+
+    @Override
     public void fly() {
         super.fly();
-        System.out.println("Parrot is flying high in the sky...");
+        System.out.println("Running fly in parrot...");
     }
 
+    @Override
     public void sing() {
         super.sing();
-        System.out.println("Parrot is mimicking human speech...");
+        System.out.println("Running sing in parrot...");
     }
 
+    @Override
     public void eat() {
         super.eat();
-        System.out.println("Parrot is eating fruits and seeds...");
+        System.out.println("Running eat in parrot...");
     }
 
+    @Override
     public void sleep() {
         super.sleep();
-        System.out.println("Parrot is sleeping inside its cage...");
+        System.out.println("Running sleep in parrot...");
     }
 
+    @Override
     public void buildNest() {
         super.buildNest();
-        System.out.println("Parrot is making a nest in the trees...");
+        System.out.println("Running build nest in parrot...");
     }
 }

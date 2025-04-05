@@ -1,25 +1,34 @@
 package com.xworkz.inheritance;
 
-public class Furniture extends Table
-{
+public class Furniture extends Table {
+
+    @Override
     public void placeObject() {
         super.placeObject();
-        System.out.println("Placing an object on the wooden table...");
+        System.out.println("Running placeObject in furniture...");
     }
+
+    @Override
     public void clean() {
         super.clean();
-        System.out.println("Cleaning the wooden table with polish...");
+        System.out.println("Running clean in furniture...");
     }
+
+    @Override
     public void fold() {
         super.fold();
-        System.out.println("Folding the wooden table carefully...");
+        System.out.println("Running fold in furniture...");
     }
+
+    @Override
     public void adjustHeight() {
         super.adjustHeight();
-        System.out.println("Adjusting the height of the wooden table...");
+        System.out.println("Running adjustHeight in furniture...");
     }
+
+    @Override
     public void move() {
         super.move();
-        System.out.println("Moving the wooden table with care...");
+        System.out.println("Running move in furniture...");
     }
 }

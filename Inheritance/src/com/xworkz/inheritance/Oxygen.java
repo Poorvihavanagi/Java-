@@ -2,24 +2,33 @@ package com.xworkz.inheritance;
 
 public class Oxygen extends Air {
 
+    @Override
     public void flow() {
         super.flow();
-        System.out.println("Oxygen is flowing through the atmosphere...");
+        System.out.println("Running flow in oxygen...");
     }
+
+    @Override
     public void compress() {
         super.compress();
-        System.out.println("Compressing oxygen into a cylinder...");
+        System.out.println("Running compress in oxygen...");
     }
+
+    @Override
     public void expand() {
         super.expand();
-        System.out.println("Oxygen expands when released from a container...");
+        System.out.println("Running expand in oxygen...");
     }
+
+    @Override
     public void checkPurity() {
         super.checkPurity();
-        System.out.println("Checking the purity of medical oxygen...");
+        System.out.println("Running check purity in oxygen...");
     }
+
+    @Override
     public void mix() {
         super.mix();
-        System.out.println("Oxygen is mixing with nitrogen in the air...");
+        System.out.println("Running mix in oxygen...");
     }
 }

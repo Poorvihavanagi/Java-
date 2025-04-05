@@ -1,26 +1,34 @@
 package com.xworkz.inheritance;
 
 public class BeachResort extends Resort {
+
+    @Override
     public void bookRoom() {
         super.bookRoom();
-        System.out.println("Beach Resort offers sea-facing cottages...");
+        System.out.println("Running bookRoom in BeachResort");
     }
 
+    @Override
     public void serveFood() {
         super.serveFood();
-        System.out.println("Beach Resort serves fresh seafood and tropical drinks...");
+        System.out.println("Running serveFood in BeachResort");
     }
 
+    @Override
     public void provideEntertainment() {
         super.provideEntertainment();
-        System.out.println("Beach Resort provides water sports and sunset cruises...");
+        System.out.println("Running provideEntertainment in BeachResort");
     }
+
+    @Override
     public void offerSpaServices() {
         super.offerSpaServices();
-        System.out.println("Beach Resort offers beachfront spa treatments...");
+        System.out.println("Running offerSpaServices in BeachResort");
     }
+
+    @Override
     public void maintainHygiene() {
         super.maintainHygiene();
-        System.out.println("Beach Resort ensures cleanliness and eco-friendly practices...");
+        System.out.println("Running maintainHygiene in BeachResort");
     }
 }

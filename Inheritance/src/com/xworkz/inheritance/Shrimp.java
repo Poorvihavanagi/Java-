@@ -1,28 +1,34 @@
 package com.xworkz.inheritance;
 
 public class Shrimp extends SeaFood {
+
+    @Override
     public void cook() {
         super.cook();
-        System.out.println("Cooking shrimp with butter and garlic...");
+        System.out.println("Running cook in shrimp");
     }
 
+    @Override
     public void eat() {
         super.eat();
-        System.out.println("Eating shrimp with sauce...");
+        System.out.println("Running eat in shrimp");
     }
 
+    @Override
     public void store() {
         super.store();
-        System.out.println("Keeping shrimp in ice to maintain freshness...");
+        System.out.println("Running store in shrimp");
     }
 
+    @Override
     public void checkFreshness() {
         super.checkFreshness();
-        System.out.println("Checking if shrimp smells fresh...");
+        System.out.println("Running check freshness in shrimp");
     }
 
+    @Override
     public void season() {
         super.season();
-        System.out.println("Seasoning shrimp with lemon and herbs...");
+        System.out.println("Running season in shrimp");
     }
 }

@@ -1,29 +1,34 @@
 package com.xworkz.inheritance;
 
-public class Metro extends Transportation{
+public class Metro extends Transportation {
 
-        public void move() {
-            super.move();
-            System.out.println("Running move metro");
-        }
+    @Override
+    public void move() {
+        super.move();
+        System.out.println("Running move in metro...");
+    }
 
-        public void stop() {
-            super.stop();
-            System.out.println("Running stop metro");
-        }
+    @Override
+    public void stop() {
+        super.stop();
+        System.out.println("Running stop in metro...");
+    }
 
-        public void fuel() {
-            super.fuel();
-            System.out.println("Running fuel metro");
-        }
+    @Override
+    public void fuel() {
+        super.fuel();
+        System.out.println("Running fuel in metro...");
+    }
 
-        public void capacity() {
-            super.capacity();
-            System.out.println("Running capacity metro");
-        }
+    @Override
+    public void capacity() {
+        super.capacity();
+        System.out.println("Running capacity in metro...");
+    }
 
-        public void speed() {
-            super.speed();
-            System.out.println("Running speed metro");
-        }
+    @Override
+    public void speed() {
+        super.speed();
+        System.out.println("Running speed in metro...");
+    }
 }

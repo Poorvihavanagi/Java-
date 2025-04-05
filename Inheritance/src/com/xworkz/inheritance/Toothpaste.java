@@ -1,28 +1,34 @@
 package com.xworkz.inheritance;
 
 public class Toothpaste extends Product {
+
+    @Override
     public void use() {
         super.use();
-        System.out.println("Using the toothpaste for brushing...");
+        System.out.println("Running use in toothpaste...");
     }
 
+    @Override
     public void checkExpiry() {
         super.checkExpiry();
-        System.out.println("Checking the expiry date of the toothpaste...");
+        System.out.println("Running checkExpiry in toothpaste...");
     }
 
+    @Override
     public void apply() {
         super.apply();
-        System.out.println("Applying the toothpaste on the toothbrush...");
+        System.out.println("Running apply in toothpaste...");
     }
 
+    @Override
     public void store() {
         super.store();
-        System.out.println("Storing the toothpaste in a cool, dry place...");
+        System.out.println("Running store in toothpaste...");
     }
 
+    @Override
     public void dispose() {
         super.dispose();
-        System.out.println("Disposing of the empty toothpaste tube properly...");
+        System.out.println("Running dispose in toothpaste...");
     }
 }

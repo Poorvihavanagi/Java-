@@ -1,6 +1,5 @@
 package com.xworkz.inheritance;
 
-// Parent Class
 public class Icecream {
     public void prepare() {
         System.out.println("Preparing the ice cream...");

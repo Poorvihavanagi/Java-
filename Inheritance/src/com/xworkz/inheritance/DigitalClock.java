@@ -2,24 +2,33 @@ package com.xworkz.inheritance;
 
 public class DigitalClock extends Clock {
 
+    @Override
     public void showTime() {
         super.showTime();
-        System.out.println("Displaying the digital time on the LED screen...");
+        System.out.println("Running showTime in DigitalClock");
     }
+
+    @Override
     public void setAlarm() {
         super.setAlarm();
-        System.out.println("Setting an alarm with a digital sound...");
+        System.out.println("Running setAlarm in DigitalClock");
     }
+
+    @Override
     public void stopAlarm() {
         super.stopAlarm();
-        System.out.println("Stopping the digital alarm...");
+        System.out.println("Running stopAlarm in DigitalClock");
     }
+
+    @Override
     public void checkBattery() {
         super.checkBattery();
-        System.out.println("Checking the battery level of the digital clock...");
+        System.out.println("Running checkBattery in DigitalClock");
     }
+
+    @Override
     public void adjustTime() {
         super.adjustTime();
-        System.out.println("Automatically syncing digital time with the internet...");
+        System.out.println("Running adjustTime in DigitalClock");
     }
 }

@@ -1,29 +1,34 @@
 package com.xworkz.inheritance;
 
-public class Poet extends Writer{
+public class Poet extends Writer {
 
+    @Override
     public void write() {
         super.write();
-        System.out.println("Writing beautiful verses in poetry...");
+        System.out.println("Running write in Poet");
     }
 
+    @Override
     public void edit() {
         super.edit();
-        System.out.println("Editing the lines of poetry to perfect the rhythm...");
+        System.out.println("Running edit in Poet");
     }
 
+    @Override
     public void publish() {
         super.publish();
-        System.out.println("Publishing the poetry collection...");
+        System.out.println("Running publish in Poet");
     }
 
+    @Override
     public void inspire() {
         super.inspire();
-        System.out.println("Inspiring others through poetic expressions...");
+        System.out.println("Running inspire in Poet");
     }
 
+    @Override
     public void create() {
         super.create();
-        System.out.println("Creating deep and meaningful poetry...");
+        System.out.println("Running create in Poet");
     }
 }

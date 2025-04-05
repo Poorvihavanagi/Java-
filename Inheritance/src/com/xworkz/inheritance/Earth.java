@@ -15,4 +15,14 @@ public class Earth extends Planet{
         super.supportLife();
         System.out.println("Earth is the only known planet that supports life...");
     }
+
+    public void maintainAtmosphere() {
+        super.maintainAtmosphere();
+        System.out.println("Earth maintains an atmosphere rich in oxygen and nitrogen...");
+    }
+
+    public void containWater() {
+        super.containWater();
+        System.out.println("Earth contains abundant water bodies essential for life...");
+    }
 }

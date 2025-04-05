@@ -1,9 +1,34 @@
 package com.xworkz.inheritance;
 
 public class Coffee extends Drink {
-    public void prepare() { super.prepare(); System.out.println("Brewing hot coffee..."); }
-    public void pour() { super.pour(); System.out.println("Pouring coffee into a cup..."); }
-    public void serve() { super.serve(); System.out.println("Serving coffee with sugar and milk..."); }
-    public void sip() { super.sip(); System.out.println("Sipping hot coffee slowly..."); }
-    public void finish() { super.finish(); System.out.println("Finishing the last sip of coffee..."); }
+
+    @Override
+    public void prepare() {
+        super.prepare();
+        System.out.println("Running prepare in Coffee");
+    }
+
+    @Override
+    public void pour() {
+        super.pour();
+        System.out.println("Running pour in Coffee");
+    }
+
+    @Override
+    public void serve() {
+        super.serve();
+        System.out.println("Running serve in Coffee");
+    }
+
+    @Override
+    public void sip() {
+        super.sip();
+        System.out.println("Running sip in Coffee");
+    }
+
+    @Override
+    public void finish() {
+        super.finish();
+        System.out.println("Running finish in Coffee");
+    }
 }

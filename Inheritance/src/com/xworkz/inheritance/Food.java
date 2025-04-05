@@ -1,4 +1,4 @@
-// Parent Class: Food
+
 package com.xworkz.inheritance;
 
 public class Food {

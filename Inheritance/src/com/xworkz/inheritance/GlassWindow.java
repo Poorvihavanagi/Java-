@@ -1,28 +1,34 @@
 package com.xworkz.inheritance;
 
 public class GlassWindow extends Window {
+
+    @Override
     public void open() {
         super.open();
-        System.out.println("Sliding open the glass window...");
+        System.out.println("Running open in glass window...");
     }
 
+    @Override
     public void close() {
         super.close();
-        System.out.println("Sliding close the glass window...");
+        System.out.println("Running close in glass window...");
     }
 
+    @Override
     public void clean() {
         super.clean();
-        System.out.println("Using glass cleaner for the glass window...");
+        System.out.println("Running clean in glass window...");
     }
 
+    @Override
     public void lock() {
         super.lock();
-        System.out.println("Locking the glass window securely...");
+        System.out.println("Running lock in glass window...");
     }
 
+    @Override
     public void checkMaterial() {
         super.checkMaterial();
-        System.out.println("Verifying if the glass window is tempered...");
+        System.out.println("Running checkMaterial in glass window...");
     }
 }

@@ -1,28 +1,34 @@
 package com.xworkz.inheritance;
 
 public class Silk extends Fabric {
+
+    @Override
     public void weave() {
         super.weave();
-        System.out.println("Weaving fine silk fabric...");
+        System.out.println("Running weave in silk");
     }
 
+    @Override
     public void dye() {
         super.dye();
-        System.out.println("Dyeing silk with vibrant colors...");
+        System.out.println("Running dye in silk");
     }
 
+    @Override
     public void wash() {
         super.wash();
-        System.out.println("Washing silk with delicate care...");
+        System.out.println("Running wash in silk");
     }
 
+    @Override
     public void dry() {
         super.dry();
-        System.out.println("Drying silk fabric carefully...");
+        System.out.println("Running dry in silk");
     }
 
+    @Override
     public void checkQuality() {
         super.checkQuality();
-        System.out.println("Checking silk's smoothness and purity...");
+        System.out.println("Running check quality in silk");
     }
 }

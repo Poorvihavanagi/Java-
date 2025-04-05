@@ -1,25 +1,34 @@
 package com.xworkz.inheritance;
 
-// Subclass: Jail extends Prison
 public class Jail extends Prison {
+
+    @Override
     public void lockUp() {
         super.lockUp();
-        System.out.println("Jail is locking up short-term prisoners.");
+        System.out.println("Running lockUp in jail");
     }
+
+    @Override
     public void release() {
         super.release();
-        System.out.println("Jail is releasing inmates on bail.");
+        System.out.println("Running release in jail");
     }
+
+    @Override
     public void monitor() {
         super.monitor();
-        System.out.println("Jail officers are monitoring cell activities.");
+        System.out.println("Running monitor in jail");
     }
+
+    @Override
     public void enforceRules() {
         super.enforceRules();
-        System.out.println("Jail enforces strict rules for discipline.");
+        System.out.println("Running enforceRules in jail");
     }
+
+    @Override
     public void conductInspection() {
         super.conductInspection();
-        System.out.println("Jail authorities are conducting a security check.");
+        System.out.println("Running conductInspection in jail");
     }
 }

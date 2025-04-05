@@ -11,15 +11,13 @@ public class CloudRunner {
         atmosphere.provideOxygen();
         atmosphere.controlWeather();
         atmosphere.filterRadiation();
+        atmosphere.supportCommunication();
 
         Cloud cloud = new Cloud();
         cloud.regulateTemperature();
         cloud.provideOxygen();
         cloud.controlWeather();
         cloud.filterRadiation();
-        cloud.formRain();
-        cloud.blockSunlight();
-        cloud.moveWithWind();
-        cloud.changeShape();
+        cloud.supportCommunication();
     }
 }

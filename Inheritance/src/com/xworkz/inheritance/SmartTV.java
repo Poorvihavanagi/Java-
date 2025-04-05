@@ -2,28 +2,33 @@ package com.xworkz.inheritance;
 
 public class SmartTV extends TV {
 
+    @Override
     public void turnOn() {
         super.turnOn();
-        System.out.println("Turning on the Smart TV with voice command...");
+        System.out.println("Running turn on in smart TV");
     }
 
+    @Override
     public void turnOff() {
         super.turnOff();
-        System.out.println("Turning off the Smart TV remotely...");
+        System.out.println("Running turn off in smart TV");
     }
 
+    @Override
     public void changeChannel() {
         super.changeChannel();
-        System.out.println("Changing the channel using the Smart TV remote...");
+        System.out.println("Running change channel in smart TV");
     }
 
+    @Override
     public void adjustVolume() {
         super.adjustVolume();
-        System.out.println("Adjusting the volume using Smart TV settings...");
+        System.out.println("Running adjust volume in smart TV");
     }
 
+    @Override
     public void displayInfo() {
         super.displayInfo();
-        System.out.println("Displaying Smart TV specifications...");
+        System.out.println("Running display info in smart TV");
     }
 }

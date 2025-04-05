@@ -1,26 +1,29 @@
 package com.xworkz.inheritance;
 
 public class DrinkingGlass extends Glass {
+
     public void fill() {
         super.fill();
-        System.out.println("Filling the drinking glass with water...");
+        System.out.println("Running fill in DrinkingGlass");
     }
 
     public void drink() {
         super.drink();
-        System.out.println("Drinking water from the drinking glass...");
+        System.out.println("Running drink in DrinkingGlass");
     }
+
     public void clean() {
         super.clean();
-        System.out.println("Washing the drinking glass properly...");
+        System.out.println("Running clean in DrinkingGlass");
     }
 
     public void checkMaterial() {
         super.checkMaterial();
-        System.out.println("Checking if the drinking glass is made of glass material...");
+        System.out.println("Running checkMaterial in DrinkingGlass");
     }
+
     public void empty() {
         super.empty();
-        System.out.println("Emptying the drinking glass after use...");
+        System.out.println("Running empty in DrinkingGlass");
     }
 }

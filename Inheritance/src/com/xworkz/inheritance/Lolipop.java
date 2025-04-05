@@ -2,28 +2,33 @@ package com.xworkz.inheritance;
 
 public class Lolipop extends Candy {
 
+    @Override
     public void taste() {
         super.taste();
-        System.out.println("Lollipop has a fruity flavor.");
+        System.out.println("Running taste in lollipop");
     }
 
+    @Override
     public void chew() {
         super.chew();
-        System.out.println("Lollipop is hard, so it should be sucked before chewing.");
+        System.out.println("Running chew in lollipop");
     }
 
+    @Override
     public void unwrap() {
         super.unwrap();
-        System.out.println("Unwrapping the lollipop from its stick cover.");
+        System.out.println("Running unwrap in lollipop");
     }
 
+    @Override
     public void dissolve() {
         super.dissolve();
-        System.out.println("Lollipop dissolves slowly when sucked.");
+        System.out.println("Running dissolve in lollipop");
     }
 
+    @Override
     public void checkFlavor() {
         super.checkFlavor();
-        System.out.println("Checking if the lollipop flavor is strawberry, orange, or lemon.");
+        System.out.println("Running checkFlavor in lolipop");
     }
 }

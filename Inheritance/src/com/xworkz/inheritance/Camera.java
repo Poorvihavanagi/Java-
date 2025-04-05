@@ -3,22 +3,22 @@ package com.xworkz.inheritance;
 public class Camera {
 
     public void capturePhoto() {
-        System.out.println("Capturing a photo...");
+        System.out.println("Capturing a photo");
     }
 
     public void recordVideo() {
-        System.out.println("Recording a video...");
+        System.out.println("Recording a video");
     }
 
     public void zoomIn() {
-        System.out.println("Zooming in...");
+        System.out.println("Zooming in");
     }
 
     public void zoomOut() {
-        System.out.println("Zooming out...");
+        System.out.println("Zooming out");
     }
 
     public void adjustFocus() {
-        System.out.println("Adjusting the camera focus...");
+        System.out.println("Adjusting the camera focus");
     }
 }

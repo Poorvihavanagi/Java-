@@ -1,30 +1,34 @@
 package com.xworkz.inheritance;
 
-public class Cup extends Mug
-{
+public class Cup extends Mug {
+
+    @Override
     public void fill() {
         super.fill();
-        System.out.println("Filling the coffee mug with hot coffee...");
+        System.out.println("Running fill in Cup");
     }
 
+    @Override
     public void drink() {
         super.drink();
-        System.out.println("Drinking hot coffee from the coffee mug...");
+        System.out.println("Running drink in Cup");
     }
 
+    @Override
     public void wash() {
         super.wash();
-        System.out.println("Washing the coffee mug with care...");
+        System.out.println("Running wash in Cup");
     }
 
+    @Override
     public void heat() {
         super.heat();
-        System.out.println("Heating the coffee mug safely...");
+        System.out.println("Running heat in Cup");
     }
 
+    @Override
     public void checkMaterial() {
         super.checkMaterial();
-        System.out.println("Checking if the coffee mug is made of ceramic...");
+        System.out.println("Running check Material in Cup");
     }
-
 }

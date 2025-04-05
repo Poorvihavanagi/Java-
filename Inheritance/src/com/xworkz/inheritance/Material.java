@@ -2,28 +2,33 @@ package com.xworkz.inheritance;
 
 public class Material extends Book {
 
+    @Override
     public void open() {
         super.open();
-        System.out.println("Opening the study material...");
+        System.out.println("Running open in material...");
     }
 
+    @Override
     public void read() {
         super.read();
-        System.out.println("Reading the study material for exam preparation...");
+        System.out.println("Running read in material...");
     }
 
+    @Override
     public void close() {
         super.close();
-        System.out.println("Closing the study material after reading...");
+        System.out.println("Running close in material...");
     }
 
+    @Override
     public void bookmark() {
         super.bookmark();
-        System.out.println("Bookmarking an important section in the study material...");
+        System.out.println("Running bookmark in material...");
     }
 
+    @Override
     public void checkPages() {
         super.checkPages();
-        System.out.println("Checking the total number of pages in the study material...");
+        System.out.println("Running checkPages in material...");
     }
 }

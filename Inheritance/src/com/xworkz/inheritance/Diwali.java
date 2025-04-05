@@ -2,28 +2,33 @@ package com.xworkz.inheritance;
 
 public class Diwali extends Festival {
 
+    @Override
     public void celebrate() {
         super.celebrate();
-        System.out.println("Celebrating Diwali, the festival of lights...");
+        System.out.println("Running celebrate in Diwali");
     }
 
+    @Override
     public void lightDecorations() {
         super.lightDecorations();
-        System.out.println("Lighting diyas and decorating homes...");
+        System.out.println("Running light Decorations in Diwali");
     }
 
+    @Override
     public void distributeSweets() {
         super.distributeSweets();
-        System.out.println("Sharing Diwali sweets like ladoos and barfis...");
+        System.out.println("Running distribute Sweets in Diwali");
     }
 
+    @Override
     public void performRituals() {
         super.performRituals();
-        System.out.println("Performing Lakshmi Puja for prosperity...");
+        System.out.println("Running perform Rituals in Diwali");
     }
 
+    @Override
     public void enjoyFireworks() {
         super.enjoyFireworks();
-        System.out.println("Bursting crackers and enjoying fireworks...");
+        System.out.println("Running enjoy Fireworks in Diwali");
     }
 }

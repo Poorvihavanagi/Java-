@@ -1,24 +1,34 @@
 package com.xworkz.inheritance;
 
 public class Paint extends Coating {
+
+    @Override
     public void apply() {
         super.apply();
-        System.out.println("Applying paint on the wall...");
+        System.out.println("Running apply in paint...");
     }
+
+    @Override
     public void dry() {
         super.dry();
-        System.out.println("Waiting for the paint to dry completely...");
+        System.out.println("Running dry in paint...");
     }
+
+    @Override
     public void checkQuality() {
         super.checkQuality();
-        System.out.println("Checking if the paint is smooth and even...");
+        System.out.println("Running check quality in paint...");
     }
+
+    @Override
     public void remove() {
         super.remove();
-        System.out.println("Scraping off old paint before repainting...");
+        System.out.println("Running remove in paint...");
     }
+
+    @Override
     public void protectSurface() {
         super.protectSurface();
-        System.out.println("Paint protecting the surface from damage and moisture...");
+        System.out.println("Running protect surface in paint...");
     }
 }

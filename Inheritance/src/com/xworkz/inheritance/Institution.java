@@ -1,4 +1,4 @@
-// Parent Class: Institution
+
 package com.xworkz.inheritance;
 
 public class Institution {

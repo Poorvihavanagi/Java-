@@ -1,27 +1,34 @@
 package com.xworkz.inheritance;
 
-public class Dog extends Animal
-{
+public class Dog extends Animal {
+
+    @Override
     public void eat() {
         super.eat();
-        System.out.println("Dog is eating bones...");
+        System.out.println("Running eat in Dog");
     }
 
+    @Override
     public void sleep() {
         super.sleep();
-        System.out.println("Dog is sleeping in its kennel...");
+        System.out.println("Running sleep in Dog");
     }
 
+    @Override
     public void walk() {
         super.walk();
-        System.out.println("Dog is walking in the park...");
+        System.out.println("Running walk in Dog");
     }
+
+    @Override
     public void makeSound() {
         super.makeSound();
-        System.out.println("Dog is barking...");
+        System.out.println("Running make Sound in Dog");
     }
+
+    @Override
     public void breathe() {
         super.breathe();
-        System.out.println("Dog is panting...");
+        System.out.println("Running breathe in Dog");
     }
 }

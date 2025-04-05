@@ -2,29 +2,33 @@ package com.xworkz.inheritance;
 
 public class Student extends Person {
 
+    @Override
     public void eat() {
         super.eat();
-        System.out.println("Student is eating in the cafeteria...");
+        System.out.println("Running eat in student");
     }
 
+    @Override
     public void sleep() {
         super.sleep();
-        System.out.println("Student is sleeping after studying...");
+        System.out.println("Running sleep in student");
     }
 
+    @Override
     public void walk() {
         super.walk();
-        System.out.println("Student is walking to class...");
+        System.out.println("Running walk in student");
     }
 
+    @Override
     public void talk() {
         super.talk();
-        System.out.println("Student is discussing homework...");
+        System.out.println("Running talk in student");
     }
 
+    @Override
     public void think() {
         super.think();
-        System.out.println("Student is thinking about exams...");
+        System.out.println("Running think in student");
     }
-
 }

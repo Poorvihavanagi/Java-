@@ -1,28 +1,34 @@
 package com.xworkz.inheritance;
 
 public class Cookie extends Baked {
+
+    @Override
     public void prepare() {
         super.prepare();
-        System.out.println("Mixing flour, sugar, butter, and chocolate chips...");
+        System.out.println("Running prepare in Cookie");
     }
 
+    @Override
     public void bake() {
         super.bake();
-        System.out.println("Baking cookies at 180°C for 15 minutes...");
+        System.out.println("Running bake in Cookie");
     }
 
+    @Override
     public void coolDown() {
         super.coolDown();
-        System.out.println("Letting cookies cool down before eating...");
+        System.out.println("Running coolDown in Cookie");
     }
 
+    @Override
     public void pack() {
         super.pack();
-        System.out.println("Packing cookies in an airtight container...");
+        System.out.println("Running pack in Cookie");
     }
 
+    @Override
     public void serve() {
         super.serve();
-        System.out.println("Serving warm cookies with milk...");
+        System.out.println("Running serve in Cookie");
     }
 }

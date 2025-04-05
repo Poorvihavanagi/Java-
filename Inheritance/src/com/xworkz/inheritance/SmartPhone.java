@@ -1,29 +1,34 @@
 package com.xworkz.inheritance;
 
-public class SmartPhone extends Device{
+public class SmartPhone extends Device {
 
+    @Override
     public void powerOn() {
         super.powerOn();
-        System.out.println("Smartphone is now powered on...");
+        System.out.println("Running power on in smartphone");
     }
 
+    @Override
     public void powerOff() {
         super.powerOff();
-        System.out.println("Smartphone is now powered off...");
+        System.out.println("Running power off in smartphone");
     }
 
+    @Override
     public void charge() {
         super.charge();
-        System.out.println("Charging the smartphone...");
+        System.out.println("Running charge in smartphone");
     }
 
+    @Override
     public void connectToNetwork() {
         super.connectToNetwork();
-        System.out.println("Connecting the smartphone to Wi-Fi or mobile data...");
+        System.out.println("Running connect to network in smartphone");
     }
 
+    @Override
     public void performTask() {
         super.performTask();
-        System.out.println("Performing a task on the smartphone like browsing or using an app...");
+        System.out.println("Running perform task in smartphone");
     }
 }

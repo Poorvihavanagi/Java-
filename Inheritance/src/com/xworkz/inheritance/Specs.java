@@ -2,25 +2,33 @@ package com.xworkz.inheritance;
 
 public class Specs extends VisionAid {
 
+    @Override
     public void correctVision() {
         super.correctVision();
-        System.out.println("Using spectacles to correct vision...");
-    }
-    public void protectEyes() {
-        super.protectEyes();
-        System.out.println("Specs providing UV protection...");
-    }
-    public void checkPower() {
-        super.checkPower();
-        System.out.println("Checking specs lens power...");
+        System.out.println("Running correct vision in specs");
     }
 
+    @Override
+    public void protectEyes() {
+        super.protectEyes();
+        System.out.println("Running protect eyes in specs");
+    }
+
+    @Override
+    public void checkPower() {
+        super.checkPower();
+        System.out.println("Running check power in specs");
+    }
+
+    @Override
     public void clean() {
         super.clean();
-        System.out.println("Cleaning spectacles with microfiber cloth...");
+        System.out.println("Running clean in specs");
     }
+
+    @Override
     public void displayBrand() {
         super.displayBrand();
-        System.out.println("Specs brand: Ray-Ban...");
+        System.out.println("Running display brand in specs");
     }
 }

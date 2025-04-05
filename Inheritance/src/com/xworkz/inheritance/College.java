@@ -1,29 +1,34 @@
 package com.xworkz.inheritance;
 
-public class College extends University
-{
+public class College extends University {
+
+    @Override
     public void offerPrograms() {
         super.offerPrograms();
-        System.out.println("Offering specialized programs...");
+        System.out.println("Running offer Programs in College");
     }
 
+    @Override
     public void provideResearchOpportunities() {
         super.provideResearchOpportunities();
-        System.out.println("Focusing on field-specific research...");
+        System.out.println("Running provide Research Opportunities in College");
     }
 
+    @Override
     public void hostEvents() {
         super.hostEvents();
-        System.out.println("Organizing academic and cultural events...");
+        System.out.println("Running host Events in College");
     }
 
+    @Override
     public void offerDegrees() {
         super.offerDegrees();
-        System.out.println("Offering undergraduate degrees...");
+        System.out.println("Running offer Degrees in College");
     }
 
+    @Override
     public void provideInfrastructure() {
         super.provideInfrastructure();
-        System.out.println("Providing college-specific facilities...");
+        System.out.println("Running provide Infrastructure in College");
     }
 }

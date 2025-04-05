@@ -1,28 +1,34 @@
-// Subclass: School
 package com.xworkz.inheritance;
 
 public class School extends Institution {
 
+    @Override
     public void enrollStudents() {
         super.enrollStudents();
-        System.out.println("Enrolling students in primary and secondary education...");
+        System.out.println("Running enroll students in school");
     }
 
-
+    @Override
     public void conductClasses() {
         super.conductClasses();
-        System.out.println("Conducting subjects like Math, Science, and English...");
+        System.out.println("Running conduct classes in school");
     }
+
+    @Override
     public void organizeEvents() {
         super.organizeEvents();
-        System.out.println("Organizing school annual day and sports events...");
+        System.out.println("Running organize events in school");
     }
+
+    @Override
     public void manageStaff() {
         super.manageStaff();
-        System.out.println("Managing school teachers and administration...");
+        System.out.println("Running manage staff in school");
     }
+
+    @Override
     public void maintainDiscipline() {
         super.maintainDiscipline();
-        System.out.println("Ensuring students follow school rules and ethics...");
+        System.out.println("Running maintain discipline in school");
     }
 }

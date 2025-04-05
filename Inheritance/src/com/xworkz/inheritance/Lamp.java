@@ -1,6 +1,5 @@
 package com.xworkz.inheritance;
 
-// Parent Class
 public class Lamp {
     public void turnOn() {
         System.out.println("Turning on the lamp...");

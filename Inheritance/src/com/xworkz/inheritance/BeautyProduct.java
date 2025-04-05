@@ -1,24 +1,34 @@
 package com.xworkz.inheritance;
 
 public class BeautyProduct extends NailPolish {
+
+    @Override
     public void apply() {
         super.apply();
-        System.out.println("Applying beauty product nail polish...");
+        System.out.println("Running apply in BeautyProduct");
     }
+
+    @Override
     public void remove() {
         super.remove();
-        System.out.println("Using a beauty product remover for nail polish...");
+        System.out.println("Running remove in BeautyProduct");
     }
+
+    @Override
     public void dry() {
         super.dry();
-        System.out.println("Drying beauty product nail polish...");
+        System.out.println("Running dry in BeautyProduct");
     }
+
+    @Override
     public void checkColor() {
         super.checkColor();
-        System.out.println("Checking beauty product nail polish shade...");
+        System.out.println("Running checkColor in BeautyProduct");
     }
+
+    @Override
     public void shake() {
         super.shake();
-        System.out.println("Shaking beauty product nail polish before application...");
+        System.out.println("Running shake in BeautyProduct");
     }
 }

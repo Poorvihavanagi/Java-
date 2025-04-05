@@ -9,11 +9,15 @@ public class PlanetRunner {
         earth.rotate();
         earth.revolve();
         earth.supportLife();
+        earth.maintainAtmosphere();
+        earth.containWater();
 
         System.out.println("------------------------------------------");
         Planet planet = new Earth();
         planet.rotate();
         planet.revolve();
         planet.supportLife();
+        planet.maintainAtmosphere();
+        planet.containWater();
     }
 }

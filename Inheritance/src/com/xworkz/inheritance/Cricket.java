@@ -1,25 +1,34 @@
 package com.xworkz.inheritance;
 
 public class Cricket extends Game {
+
+    @Override
     public void start() {
         super.start();
-        System.out.println("Cricket match is starting with a toss...");
+        System.out.println("Running start in Cricket");
     }
 
+    @Override
     public void play() {
         super.play();
-        System.out.println("Players are batting and bowling...");
+        System.out.println("Running play in Cricket");
     }
+
+    @Override
     public void pause() {
         super.pause();
-        System.out.println("Cricket match paused due to rain...");
+        System.out.println("Running pause in Cricket");
     }
+
+    @Override
     public void end() {
         super.end();
-        System.out.println("Cricket match has ended with a winner...");
+        System.out.println("Running end in Cricket");
     }
+
+    @Override
     public void displayRules() {
         super.displayRules();
-        System.out.println("Cricket rules: 11 players per team, 20 or 50 overs...");
+        System.out.println("Running displayRules in Cricket");
     }
 }

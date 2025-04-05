@@ -2,24 +2,33 @@ package com.xworkz.inheritance;
 
 public class Napkin extends Cloth {
 
+    @Override
     public void absorb() {
         super.absorb();
-        System.out.println("The napkin quickly absorbs spills.");
+        System.out.println("Running absorb in napkin...");
     }
+
+    @Override
     public void clean() {
         super.clean();
-        System.out.println("The napkin is used to clean hands and face.");
+        System.out.println("Running clean in napkin...");
     }
+
+    @Override
     public void fold() {
         super.fold();
-        System.out.println("The napkin is neatly folded for use.");
+        System.out.println("Running fold in napkin...");
     }
+
+    @Override
     public void dry() {
         super.dry();
-        System.out.println("The napkin dries faster than a regular cloth.");
+        System.out.println("Running dry in napkin...");
     }
+
+    @Override
     public void reuse() {
         super.reuse();
-        System.out.println("Some napkins are reusable, while others are disposable.");
+        System.out.println("Running reuse in napkin...");
     }
 }

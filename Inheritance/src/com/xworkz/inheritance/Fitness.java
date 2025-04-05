@@ -1,27 +1,34 @@
 package com.xworkz.inheritance;
 
-public class Fitness extends Gym
-{
+public class Fitness extends Gym {
 
+    @Override
     public void openGym() {
         super.openGym();
-        System.out.println("Fitness Center is open 24/7 for premium member");
-    }
-    public void closeGym() {
-        super.closeGym();
-        System.out.println("Fitness Center closes at 10 PM for regular member");
-    }
-    public void provideEquipment() {
-        super.provideEquipment();
-        System.out.println("Fitness Center provides advanced gym equipment");
+        System.out.println("Running openGym in fitness");
     }
 
+    @Override
+    public void closeGym() {
+        super.closeGym();
+        System.out.println("Running closeGym in fitness");
+    }
+
+    @Override
+    public void provideEquipment() {
+        super.provideEquipment();
+        System.out.println("Running provideEquipment in fitness");
+    }
+
+    @Override
     public void conductTraining() {
         super.conductTraining();
-        System.out.println("Fitness Center offers yoga");
+        System.out.println("Running conductTraining in fitness");
     }
+
+    @Override
     public void maintainHygiene() {
         super.maintainHygiene();
-        System.out.println("Fitness Center ensures sanitized gym spaces");
+        System.out.println("Running maintainHygiene in fitness");
     }
 }

@@ -1,30 +1,34 @@
 package com.xworkz.inheritance;
 
 public class OfficeChair extends Chair {
+
+    @Override
     public void sit() {
         super.sit();
-        System.out.println("Sitting comfortably on the office chair with back support...");
+        System.out.println("Running sit in office chair...");
     }
 
+    @Override
     public void move() {
         super.move();
-        System.out.println("Rolling the office chair on wheels...");
+        System.out.println("Running move in office chair...");
     }
 
-
+    @Override
     public void fold() {
         super.fold();
-        System.out.println("Folding the office chair for storage...");
+        System.out.println("Running fold in office chair...");
     }
 
-
+    @Override
     public void adjustHeight() {
         super.adjustHeight();
-        System.out.println("Adjusting the height of the office chair with a lever...");
+        System.out.println("Running adjust height in office chair...");
     }
 
+    @Override
     public void checkMaterial() {
         super.checkMaterial();
-        System.out.println("Checking if the office chair is made of leather or mesh...");
+        System.out.println("Running check material in office chair...");
     }
 }

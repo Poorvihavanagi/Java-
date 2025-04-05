@@ -1,24 +1,34 @@
 package com.xworkz.inheritance;
 
-public class Plate extends Dish
-{
-    public void serveFood() {
-        System.out.println("Serving food on the plate...");
+public class Plate extends Dish {
+
+    @Override
+    public void wash() {
+        super.wash();
+        System.out.println("Running wash in Plate");
     }
 
-    public void clean() {
-        System.out.println("Cleaning the plate...");
+    @Override
+    public void store() {
+        super.store();
+        System.out.println("Running store in Plate");
     }
 
-    public void stack() {
-        System.out.println("Stacking the plate...");
+    @Override
+    public void use() {
+        super.use();
+        System.out.println("Running use in Plate");
     }
 
-    public void checkMaterial() {
-        System.out.println("Checking the plate material...");
-    }
-
+    @Override
     public void dry() {
-        System.out.println("Drying the plate...");
+        super.dry();
+        System.out.println("Running dry in Plate");
+    }
+
+    @Override
+    public void checkMaterial() {
+        super.checkMaterial();
+        System.out.println("Running check Material in Plate");
     }
 }

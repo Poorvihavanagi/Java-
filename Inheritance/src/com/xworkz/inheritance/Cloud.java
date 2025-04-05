@@ -1,19 +1,34 @@
 package com.xworkz.inheritance;
 
 public class Cloud extends Atmosphere {
-    public void formRain() {
-        System.out.println("Cloud is forming rain...");
+
+    @Override
+    public void regulateTemperature() {
+        super.regulateTemperature();
+        System.out.println("Running regulate Temperature in Cloud");
     }
 
-    public void blockSunlight() {
-        System.out.println("Cloud is blocking sunlight...");
+    @Override
+    public void provideOxygen() {
+        super.provideOxygen();
+        System.out.println("Running provide Oxygen in Cloud");
     }
 
-    public void moveWithWind() {
-        System.out.println("Cloud is moving with the wind...");
+    @Override
+    public void controlWeather() {
+        super.controlWeather();
+        System.out.println("Running control Weather in Cloud");
     }
 
-    public void changeShape() {
-        System.out.println("Cloud is changing its shape...");
+    @Override
+    public void filterRadiation() {
+        super.filterRadiation();
+        System.out.println("Running filter Radiation in Cloud");
+    }
+
+    @Override
+    public void supportCommunication() {
+        super.supportCommunication();
+        System.out.println("Running support Communication in Cloud");
     }
 }
