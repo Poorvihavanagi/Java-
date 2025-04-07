@@ -13,7 +13,7 @@ public class PlateRunner
         plate.checkMaterial();
         plate.dry();
 
-        System.out.println("-------------------------------------------------------");
+        System.out.println("---------------------------------");
 
         Dish dish = new Plate();
         dish.wash();
