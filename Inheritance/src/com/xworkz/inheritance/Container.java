@@ -31,4 +31,8 @@ public class Container extends Bottle {
         super.shake();
         System.out.println("Running shake in container");
     }
+
+    public void empty(){
+        System.out.println("running empty in container");
+    }
 }

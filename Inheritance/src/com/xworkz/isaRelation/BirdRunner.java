@@ -2,6 +2,7 @@ package com.xworkz.isaRelation;
 
 import com.xworkz.inheritance.Bird;
 import com.xworkz.inheritance.Parrot;
+import com.xworkz.inheritance.Peacock;
 
 public class BirdRunner {
     public static void main(String[] args) {
@@ -20,5 +21,9 @@ public class BirdRunner {
         bird.eat();
         bird.sleep();
         bird.buildNest();
+
+        System.out.println("------------------------------------------------");
+        Peacock peacock=new Peacock();
+        peacock.preenFeathers(peacock);
     }
 }

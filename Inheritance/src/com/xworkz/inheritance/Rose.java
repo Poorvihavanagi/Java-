@@ -26,4 +26,7 @@ public class Rose extends Flower {
         super.wither();
         System.out.println("Running wither in Rose");
     }
+    public void spreadFragrance() {
+        System.out.println("Rose is spreading fragrance");
+    }
 }

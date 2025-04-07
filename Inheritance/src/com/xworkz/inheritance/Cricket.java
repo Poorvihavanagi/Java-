@@ -31,4 +31,7 @@ public class Cricket extends Game {
         super.displayRules();
         System.out.println("Running displayRules in Cricket");
     }
+    public void toss() {
+        System.out.println("Running toss in cricket");
+    }
 }

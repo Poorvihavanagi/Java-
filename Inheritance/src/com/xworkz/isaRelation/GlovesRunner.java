@@ -1,6 +1,7 @@
 package com.xworkz.isaRelation;
 
 import com.xworkz.inheritance.Gloves;
+import com.xworkz.inheritance.Helmet;
 import com.xworkz.inheritance.ProtectiveGear;
 
 public class GlovesRunner {
@@ -19,5 +20,9 @@ public class GlovesRunner {
         gear.checkMaterial();
         gear.wash();
         gear.store();
+
+        System.out.println("-------------------------------------");
+        Helmet helmet=new Helmet();
+        helmet.cleanHelmet(helmet);
     }
 }

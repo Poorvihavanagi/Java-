@@ -1,6 +1,7 @@
 package com.xworkz.isaRelation;
 
 import com.xworkz.inheritance.Candy;
+import com.xworkz.inheritance.JellyBean;
 import com.xworkz.inheritance.Lolipop;
 
 public class CandyRunner {
@@ -12,12 +13,17 @@ public class CandyRunner {
         lollipop.dissolve();
         lollipop.checkFlavor();
 
-        System.out.println("-----------------------------------------------------------------------");
+        System.out.println("--------------------------------------------------------------");
         Candy candy = new Lolipop();
         candy.taste();
         candy.chew();
         candy.unwrap();
         candy.dissolve();
         candy.checkFlavor();
+
+        System.out.println("-----------------------------------------------------------------------");
+        JellyBean jellyBean=new JellyBean();
+        jellyBean.sugarCoat(jellyBean);
+
     }
 }

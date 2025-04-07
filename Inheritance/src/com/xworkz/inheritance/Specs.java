@@ -31,4 +31,8 @@ public class Specs extends VisionAid {
         super.displayBrand();
         System.out.println("Running display brand in specs");
     }
+
+    public void cleanLenses(){
+        System.out.println("Running clean lenses in specs");
+    }
 }

@@ -31,4 +31,8 @@ public class Carrot extends Vegetable {
         super.cook();
         System.out.println("Running cook in Carrot");
     }
+
+    public void makeJuice(){
+        System.out.println("Running make juice in carrot");
+    }
 }

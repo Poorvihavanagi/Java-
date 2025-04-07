@@ -2,6 +2,8 @@ package com.xworkz.isaRelation;
 
 import com.xworkz.inheritance.Bangle;
 import com.xworkz.inheritance.Accessory;
+import com.xworkz.inheritance.HairBand;
+
 public class AccessoryRunner
 {
     public static void main(String[] args) {
@@ -19,5 +21,9 @@ public class AccessoryRunner
         accessory.checkMaterial();
         accessory.clean();
         accessory.store();
+
+        System.out.println("---------------------------------------");
+        HairBand hairBand = new HairBand();
+        hairBand.polish(hairBand);
     }
 }

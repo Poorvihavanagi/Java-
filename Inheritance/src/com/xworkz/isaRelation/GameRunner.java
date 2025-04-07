@@ -1,4 +1,5 @@
 package com.xworkz.isaRelation;
+import com.xworkz.inheritance.Badminton;
 import com.xworkz.inheritance.Game;
 import com.xworkz.inheritance.Cricket;
 public class GameRunner
@@ -18,6 +19,10 @@ public class GameRunner
         game.pause();
         game.end();
         game.displayRules();
+
+        System.out.println("-------------------------------------------");
+        Badminton badminton=new Badminton();
+        badminton.serveShuttle(badminton);
     }
 
 

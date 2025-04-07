@@ -31,4 +31,7 @@ public class Skill extends MartialArts {
         super.learnDiscipline();
         System.out.println("Running learn discipline in skill");
     }
+    public void practiceKicks() {
+        System.out.println("Practicing various kicking techniques");
+    }
 }

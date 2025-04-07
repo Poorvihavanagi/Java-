@@ -31,4 +31,8 @@ public class Pizza extends Food {
         super.store();
         System.out.println("Running food store in pizza");
     }
+
+    public void addToppings() {
+        System.out.println("Running add toppings in pizza");
+    }
 }

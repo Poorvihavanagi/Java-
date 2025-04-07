@@ -31,4 +31,8 @@ public class Breeze extends Wind {
         super.carryParticles();
         System.out.println("Running carry Particles in Breeze");
     }
+
+    public void swayLeaves(){
+        System.out.println("Running sway leaves in breeze");
+    }
 }

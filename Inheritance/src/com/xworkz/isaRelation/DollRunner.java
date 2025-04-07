@@ -1,6 +1,7 @@
 package com.xworkz.isaRelation;
 
 import com.xworkz.inheritance.Doll;
+import com.xworkz.inheritance.SoftToy;
 import com.xworkz.inheritance.Toy;
 
 public class DollRunner {
@@ -11,6 +12,7 @@ public class DollRunner {
         doll.clean();
         doll.repair();
         doll.pack();
+
         System.out.println("----------------------------------------");
         Toy toy = new Doll();
         toy.play();
@@ -18,5 +20,9 @@ public class DollRunner {
         toy.clean();
         toy.repair();
         toy.pack();
+
+        System.out.println("----------------------------------------");
+        SoftToy softToy=new SoftToy();
+        softToy.wash(softToy);
     }
 }

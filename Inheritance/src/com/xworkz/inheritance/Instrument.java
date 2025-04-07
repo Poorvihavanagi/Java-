@@ -21,4 +21,7 @@ public class Instrument extends Music{
         super.changeTrack();
         System.out.println("Running change music in instrument");
     }
+    public void tune() {
+        System.out.println("Running tune in instrument");
+    }
 }

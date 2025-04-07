@@ -1,6 +1,7 @@
 package com.xworkz.isaRelation;
 
 import com.xworkz.inheritance.Baked;
+import com.xworkz.inheritance.Bread;
 import com.xworkz.inheritance.Cookie;
 
 public class BakedRunner {
@@ -20,5 +21,11 @@ public class BakedRunner {
         baked.coolDown();
         baked.pack();
         baked.serve();
+
+        System.out.println("------------------------------------------------------");
+
+        Bread bread=new Bread();
+        bread.slice(baked);
+        bread.slice(cookie);
     }
 }

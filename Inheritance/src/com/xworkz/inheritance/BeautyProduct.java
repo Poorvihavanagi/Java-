@@ -31,4 +31,8 @@ public class BeautyProduct extends NailPolish {
         super.shake();
         System.out.println("Running shake in BeautyProduct");
     }
+
+    public void shine(){
+        System.out.println("Running shine nail polish in beauty product");
+    }
 }

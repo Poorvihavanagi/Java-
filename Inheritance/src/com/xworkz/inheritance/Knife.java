@@ -31,4 +31,8 @@ public class Knife extends Weapon {
         super.carry();
         System.out.println("Running carry in knife...");
     }
+
+    public void stab() {
+        System.out.println("Running stab in knife");
+    }
 }

@@ -31,4 +31,8 @@ public class Fish extends Aquatic {
         super.liveInWater();
         System.out.println("Running live In Water in fish...");
     }
+
+    public void flickTail() {
+        System.out.println("Running flick tail in fish.");
+    }
 }

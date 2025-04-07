@@ -2,6 +2,7 @@ package com.xworkz.isaRelation;
 
 import com.xworkz.inheritance.Company;
 import com.xworkz.inheritance.ITCompany;
+import com.xworkz.inheritance.StartupCompany;
 
 public class CompanyRunner
 {
@@ -21,5 +22,10 @@ public class CompanyRunner
         company.developProduct();
         company.provideService();
         company.generateRevenue();
+
+        System.out.println("------------------------------------------------");
+
+        StartupCompany startupCompany=new StartupCompany();
+        startupCompany.pitchIdea(startupCompany);
     }
 }

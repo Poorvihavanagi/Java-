@@ -31,4 +31,7 @@ public class Napkin extends Cloth {
         super.reuse();
         System.out.println("Running reuse in napkin...");
     }
+    public void foldNapkin() {
+        System.out.println("Running fold napkin in napkin");
+    }
 }

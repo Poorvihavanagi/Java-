@@ -2,6 +2,7 @@ package com.xworkz.isaRelation;
 
 import com.xworkz.inheritance.Boat;
 import com.xworkz.inheritance.Floating;
+import com.xworkz.inheritance.WaterTransport;
 
 public class BoatRunner
 {
@@ -14,11 +15,16 @@ public class BoatRunner
         floating.startEngine();
         floating.stopEngine();
 
-       Boat boat=new Floating();
+        System.out.println("--------------------------------------------");
+        Boat boat=new Floating();
         boat.sail();
         boat.anchor();
         boat.loadCargo();
         boat.startEngine();
         boat.stopEngine();
+
+        System.out.println("--------------------------------------------");
+        WaterTransport waterTransport=new WaterTransport();
+        waterTransport.steer(waterTransport);
     }
 }

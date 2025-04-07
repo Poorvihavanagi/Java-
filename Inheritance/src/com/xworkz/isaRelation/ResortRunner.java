@@ -1,6 +1,7 @@
 package com.xworkz.isaRelation;
 
 import com.xworkz.inheritance.BeachResort;
+import com.xworkz.inheritance.HillResort;
 import com.xworkz.inheritance.Resort;
 
 public class ResortRunner
@@ -21,5 +22,9 @@ public class ResortRunner
             resort.provideEntertainment();
             resort.offerSpaServices();
             resort.maintainHygiene();
+
+            System.out.println("----------------------------------------------");
+            HillResort hillResort=new HillResort();
+            hillResort.arrangeTrekking(hillResort);
     }
 }

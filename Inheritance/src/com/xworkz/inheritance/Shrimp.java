@@ -31,4 +31,8 @@ public class Shrimp extends SeaFood {
         super.season();
         System.out.println("Running season in shrimp");
     }
+
+    public void peel(){
+        System.out.println("running peel inn shrimp");
+    }
 }

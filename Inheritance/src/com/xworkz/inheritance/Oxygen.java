@@ -31,4 +31,8 @@ public class Oxygen extends Air {
         super.mix();
         System.out.println("Running mix in oxygen...");
     }
+
+    public void supportLife(){
+        System.out.println("Running support life in oxygen");
+    }
 }

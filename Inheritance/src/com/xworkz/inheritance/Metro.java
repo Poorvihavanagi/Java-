@@ -31,4 +31,8 @@ public class Metro extends Transportation {
         super.speed();
         System.out.println("Running speed in metro...");
     }
+
+    public void openDoors(){
+        System.out.println("Running open doors in metro");
+    }
 }

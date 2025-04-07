@@ -31,4 +31,8 @@ public class Ant extends Insect {
         super.habitat();
         System.out.println("Running habitat in Ant");
     }
+
+    public void bite(){
+        System.out.println("Running ant bite");
+    }
 }

@@ -1,6 +1,7 @@
 package com.xworkz.isaRelation;
 
 import com.xworkz.inheritance.ChocolateIceCream;
+import com.xworkz.inheritance.Gelato;
 import com.xworkz.inheritance.Icecream;
 
 
@@ -20,5 +21,9 @@ public class IceCreamRunner {
         iceCream.serve();
         iceCream.addToppings();
         iceCream.eat();
+
+        System.out.println("-------------------------------------------------------");
+        Gelato gelato=new Gelato();
+        gelato.addFruitPulp(gelato);
     }
 }

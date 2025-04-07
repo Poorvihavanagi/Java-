@@ -1,6 +1,7 @@
 package com.xworkz.isaRelation;
 
 import com.xworkz.inheritance.Camera;
+import com.xworkz.inheritance.DSLR;
 import com.xworkz.inheritance.DigitalCamera;
 
 public class CameraRunner {
@@ -20,5 +21,9 @@ public class CameraRunner {
         camera.zoomIn();
         camera.zoomOut();
         camera.adjustFocus();
+
+        System.out.println("-----------------------------------------");
+        DSLR dslr=new DSLR();
+        dslr.takePhoto(dslr);
     }
 }

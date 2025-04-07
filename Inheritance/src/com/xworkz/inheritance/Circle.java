@@ -31,4 +31,7 @@ public class Circle extends Shape {
         super.resize();
         System.out.println("Running resize in Circle");
     }
+    public void describe() {
+        System.out.println("Running describe in circle");
+    }
 }

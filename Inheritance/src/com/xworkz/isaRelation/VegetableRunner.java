@@ -2,6 +2,7 @@
 package com.xworkz.isaRelation;
 
 import com.xworkz.inheritance.Carrot;
+import com.xworkz.inheritance.Spinach;
 import com.xworkz.inheritance.Vegetable;
 
 public class VegetableRunner {
@@ -21,5 +22,10 @@ public class VegetableRunner {
         vegetable.wash();
         vegetable.chop();
         vegetable.cook();
+
+        System.out.println("---------------------------------------------------------------");
+
+        Spinach spinach=new Spinach();
+        spinach.makeSoup(vegetable);
     }
 }

@@ -21,4 +21,5 @@ public class Candy {
     public void checkFlavor() {
         System.out.println("Checking the flavor of the candy");
     }
+
 }

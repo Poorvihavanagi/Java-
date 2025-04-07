@@ -31,4 +31,8 @@ public class Dog extends Animal {
         super.breathe();
         System.out.println("Running breathe in Dog");
     }
+
+    public void run(){
+        System.out.println("Running run in Dog");
+    }
 }

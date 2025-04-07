@@ -23,4 +23,8 @@ public class ITCompany extends Company{
             System.out.println("Running generate revenue in IT company");
         }
 
+        public void hireDevelopers(){
+            System.out.println("Running hire developers in IT company");
+        }
+
 }

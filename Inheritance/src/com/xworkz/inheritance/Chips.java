@@ -31,4 +31,8 @@ public class Chips extends Snack {
         super.enjoy();
         System.out.println("Running enjoy in Chips");
     }
+
+    public void openPacket(){
+        System.out.println("Running open packet in chips");
+    }
 }

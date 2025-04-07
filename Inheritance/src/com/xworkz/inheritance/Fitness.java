@@ -31,4 +31,8 @@ public class Fitness extends Gym {
         super.maintainHygiene();
         System.out.println("Running maintainHygiene in fitness");
     }
+
+    public void doCardio(){
+        System.out.println("Running do cardio in fitness");
+    }
 }

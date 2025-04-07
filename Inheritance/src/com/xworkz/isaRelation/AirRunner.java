@@ -1,6 +1,7 @@
 package com.xworkz.isaRelation;
 
 import com.xworkz.inheritance.Air;
+import com.xworkz.inheritance.FreshAir;
 import com.xworkz.inheritance.Oxygen;
 
 public class AirRunner {
@@ -20,5 +21,9 @@ public class AirRunner {
         air.expand();
         air.checkPurity();
         air.mix();
+
+        System.out.println("----------------------------------------------------------------");
+        FreshAir freshAir=new FreshAir();
+        freshAir.purifyLungs(freshAir);
     }
 }

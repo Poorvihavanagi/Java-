@@ -31,4 +31,8 @@ public class Juice extends Beverage {
         super.serve();
         System.out.println("Running serve in juice");
     }
+
+    public void addIce(){
+        System.out.println("Running add ice in juice");
+    }
 }

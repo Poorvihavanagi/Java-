@@ -31,4 +31,8 @@ public class Makeup extends Cosmetic {
         super.store();
         System.out.println("Running store in makeup");
     }
+
+    public void chooseShade(){
+        System.out.println("Running choose shade in makeup");
+    }
 }

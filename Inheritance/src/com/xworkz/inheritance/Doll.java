@@ -31,4 +31,8 @@ public class Doll extends Toy {
         super.pack();
         System.out.println("Running pack in Doll");
     }
+
+    public void dance(){
+        System.out.println("Running dance in doll");
+    }
 }

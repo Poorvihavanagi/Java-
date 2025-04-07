@@ -1,5 +1,6 @@
 package com.xworkz.isaRelation;
 
+import com.xworkz.inheritance.ContactLens;
 import com.xworkz.inheritance.Specs;
 import com.xworkz.inheritance.VisionAid;
 
@@ -20,5 +21,9 @@ public class SpecsRunner {
         visionAid.checkPower();
         visionAid.clean();
         visionAid.displayBrand();
+
+        System.out.println("-----------------------------------------");
+        ContactLens contactLens=new ContactLens();
+        contactLens.insertLens(contactLens);
     }
 }

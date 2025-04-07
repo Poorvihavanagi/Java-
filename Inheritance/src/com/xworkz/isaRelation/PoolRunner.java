@@ -1,5 +1,6 @@
 package com.xworkz.isaRelation;
 
+import com.xworkz.inheritance.OlympicPool;
 import com.xworkz.inheritance.SwimmingPool;
 import com.xworkz.inheritance.WaterBody;
 
@@ -14,12 +15,17 @@ public class PoolRunner
         swimmingPool.openPool();
         swimmingPool.closePool();
 
+        System.out.println("------------------------------------------");
         WaterBody waterBody=new WaterBody();
         waterBody.fillWater();
         waterBody.drainWater();
         waterBody.clean();
         waterBody.openPool();
         waterBody.closePool();
+
+        System.out.println("------------------------------------------");
+        OlympicPool olympicPool=new OlympicPool();
+        olympicPool.measureDepth(olympicPool);
 
     }
 }

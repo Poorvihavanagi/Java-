@@ -31,4 +31,8 @@ public class Bangle extends Accessory {
         super.store();
         System.out.println("Running store in Bangle");
     }
+
+    public void polish(){
+        System.out.println("Running polish bangle");
+    }
 }

@@ -1,5 +1,6 @@
 package com.xworkz.isaRelation;
 import com.xworkz.inheritance.Bank;
+import com.xworkz.inheritance.CurrentBank;
 import com.xworkz.inheritance.SavingBank;
 public class BankRunner {
     public static void main(String[] args) {
@@ -18,5 +19,11 @@ public class BankRunner {
         bank.withdraw();
         bank.checkBalance();
         bank.closeAccount();
+
+        System.out.println("--------------------------------------------------------");
+        SavingBank saving = new SavingBank();
+        CurrentBank current = new CurrentBank();
+        current.issueChequeBook(saving);
+        current.issueChequeBook(current);
     }
 }

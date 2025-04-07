@@ -31,4 +31,8 @@ public class Apple extends Fruit {
         super.eat();
         System.out.println("Running eat in Apple");
     }
+
+    public void slice(){
+        System.out.println("Fruit slice in apple");
+    }
 }

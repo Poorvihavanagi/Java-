@@ -2,6 +2,7 @@ package com.xworkz.isaRelation;
 
 import com.xworkz.inheritance.Building;
 import com.xworkz.inheritance.Home;
+import com.xworkz.inheritance.Pg;
 
 public class BuildingRunner
 {
@@ -12,6 +13,7 @@ public class BuildingRunner
         home.openDoors();
         home.closeWindows();
         home.provideElectricity();
+
         System.out.println("----------------------------------------------------------------");
         Building building=new Home();
         building.construct();
@@ -19,5 +21,9 @@ public class BuildingRunner
         building.openDoors();
         building.closeWindows();
         building.provideElectricity();
+
+        System.out.println("----------------------------------------------------------------");
+        Pg pg=new Pg();
+        pg.payRent(pg);
     }
 }

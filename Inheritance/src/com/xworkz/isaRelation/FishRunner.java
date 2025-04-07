@@ -1,6 +1,7 @@
 package com.xworkz.isaRelation;
 
 import com.xworkz.inheritance.Aquatic;
+import com.xworkz.inheritance.Dolphin;
 import com.xworkz.inheritance.Fish;
 
 public class FishRunner {
@@ -22,5 +23,10 @@ public class FishRunner {
         fish.layEggs();
         fish.adaptToWater();
         fish.liveInWater();
+
+        System.out.println("----------------------------------");
+
+        Dolphin dolphin=new Dolphin();
+        dolphin.jump(dolphin);
     }
 }

@@ -31,4 +31,8 @@ public class Student extends Person {
         super.think();
         System.out.println("Running think in student");
     }
+
+    public void attendClass(){
+        System.out.println("Running attend class in student");
+    }
 }

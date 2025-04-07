@@ -31,4 +31,7 @@ public class Toothpaste extends Product {
         super.dispose();
         System.out.println("Running dispose in toothpaste...");
     }
+    public void cleanTeeth(){
+        System.out.println("Running clean teeth in toothpaste");
+    }
 }

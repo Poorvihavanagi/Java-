@@ -31,4 +31,8 @@ public class Floating extends Boat {
         super.stopEngine();
         System.out.println("Running stopEngine in floating");
     }
+
+    public void navigate(){
+        System.out.println("Running navigate boat in floating");
+    }
 }

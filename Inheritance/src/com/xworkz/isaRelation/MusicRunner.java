@@ -1,5 +1,6 @@
 package com.xworkz.isaRelation;
 
+import com.xworkz.inheritance.Concert;
 import com.xworkz.inheritance.Instrument;
 import com.xworkz.inheritance.Music;
 
@@ -21,5 +22,10 @@ public class MusicRunner
         music.stop();
         music.adjustVolume();
         music.changeTrack();
+
+        System.out.println("--------------------------------------------------");
+        Concert concert=new Concert();
+        concert.setStage(concert);
+
     }
 }

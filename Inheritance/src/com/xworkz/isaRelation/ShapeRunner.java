@@ -1,6 +1,7 @@
 
 package com.xworkz.isaRelation;
 
+import com.xworkz.inheritance.Rectangle;
 import com.xworkz.inheritance.Shape;
 import com.xworkz.inheritance.Circle;
 
@@ -19,5 +20,8 @@ public class ShapeRunner {
         shape.perimeter();
         shape.color();
         shape.resize();
+        System.out.println("----------------------------------------------------------------");
+        Rectangle rectangle=new Rectangle();
+        rectangle.drawShape(rectangle);
     }
 }

@@ -31,4 +31,7 @@ public class Gloves extends ProtectiveGear {
         super.store();
         System.out.println("Running store in gloves");
     }
+    public void sanitize(){
+        System.out.println("Running sanitize in gloves");
+    }
 }

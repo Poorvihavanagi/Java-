@@ -1,5 +1,6 @@
 package com.xworkz.isaRelation;
 
+import com.xworkz.inheritance.Soap;
 import com.xworkz.inheritance.Toothpaste;
 import com.xworkz.inheritance.Product;
 
@@ -20,5 +21,9 @@ public class ToothPasteRunner {
         product.apply();
         product.store();
         product.dispose();
+
+        System.out.println("--------------------------------------------------------------------");
+        Soap soap=new Soap();
+        soap.removeGerms(soap);
     }
 }

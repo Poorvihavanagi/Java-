@@ -31,4 +31,8 @@ public class ChocolateIceCream extends Icecream {
         super.eat();
         System.out.println("Running eat in Chocolate IceCream");
     }
+
+    public void scoop(){
+        System.out.println("Running scoop in chocolate icecream");
+    }
 }

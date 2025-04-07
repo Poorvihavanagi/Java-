@@ -31,4 +31,8 @@ public class Material extends Book {
         super.checkPages();
         System.out.println("Running checkPages in material...");
     }
+
+    public void summarize(){
+        System.out.println("Running summarize ");
+    }
 }

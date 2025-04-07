@@ -1,6 +1,7 @@
 package com.xworkz.isaRelation;
 
 import com.xworkz.inheritance.Flower;
+import com.xworkz.inheritance.Lily;
 import com.xworkz.inheritance.Rose;
 
 public class FlowerRunner {
@@ -21,5 +22,10 @@ public class FlowerRunner {
         flower.photosynthesize();
         flower.attractBees();
         flower.wither();
+
+        System.out.println("------------------------------------------------");
+        Lily lily=new Lily();
+        lily.bloomInWater(flower);
+        lily.bloomInWater(lily);
     }
 }

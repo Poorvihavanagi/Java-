@@ -1,5 +1,6 @@
 package com.xworkz.isaRelation;
 
+import com.xworkz.inheritance.Lipstick;
 import com.xworkz.inheritance.NailPolish;
 import com.xworkz.inheritance.BeautyProduct;
 
@@ -19,5 +20,9 @@ public class NailPolishRunner {
         nailPolish.dry();
         nailPolish.checkColor();
         nailPolish.shake();
+
+        System.out.println("-----------------------------------------------------------------");
+        Lipstick lipstick = new Lipstick();
+        lipstick.shine(lipstick);
     }
 }

@@ -31,4 +31,7 @@ public class Diwali extends Festival {
         super.enjoyFireworks();
         System.out.println("Running enjoy Fireworks in Diwali");
     }
+    public void lightLamps() {
+        System.out.println("Running light lamps in diwali");
+    }
 }

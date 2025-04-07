@@ -1,5 +1,6 @@
 package com.xworkz.isaRelation;
 
+import com.xworkz.inheritance.Crab;
 import com.xworkz.inheritance.SeaFood;
 import com.xworkz.inheritance.Shrimp;
 
@@ -11,6 +12,7 @@ public class SeaFoodRunner {
         shrimp.store();
         shrimp.checkFreshness();
         shrimp.season();
+
         System.out.println("---------------------------------------------------------");
         SeaFood seafood = new Shrimp();
         seafood.cook();
@@ -18,5 +20,10 @@ public class SeaFoodRunner {
         seafood.store();
         seafood.checkFreshness();
         seafood.season();
+
+        System.out.println("---------------------------------------------------------");
+        Crab crab=new Crab();
+        crab.boil(crab);
+        crab.boil(seafood);
     }
 }

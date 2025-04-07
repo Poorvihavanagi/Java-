@@ -1,5 +1,6 @@
 package com.xworkz.isaRelation;
 
+import com.xworkz.inheritance.Karate;
 import com.xworkz.inheritance.MartialArts;
 import com.xworkz.inheritance.Skill;
 
@@ -19,5 +20,10 @@ public class MartialArtsRunner {
         martialArts.performKata();
         martialArts.increaseStamina();
         martialArts.learnDiscipline();
+
+        System.out.println("--------------------------------------");
+        Karate karate=new Karate();
+        karate.performPunch(karate);
+        karate.performPunch(martialArts);
     }
 }

@@ -27,4 +27,8 @@ public class WaterBody extends SwimmingPool
         super.closePool();
         System.out.println("Running close pool in water body");
     }
+
+    public void hostEvent(){
+        System.out.println("Running host event in water body");
+    }
 }

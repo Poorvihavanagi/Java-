@@ -20,4 +20,5 @@ public class Toy {
     public void pack() {
         System.out.println("Packing the toy...");
     }
+
 }

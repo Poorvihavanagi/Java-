@@ -1,5 +1,6 @@
 package com.xworkz.isaRelation;
 
+import com.xworkz.inheritance.CrossFit;
 import com.xworkz.inheritance.Gym;
 import com.xworkz.inheritance.Fitness;
 
@@ -20,5 +21,10 @@ public class FitnessRunner {
         gym.provideEquipment();
         gym.conductTraining();
         gym.maintainHygiene();
+
+        System.out.println("---------------------------------------------");
+        CrossFit crossFit=new CrossFit();
+        crossFit.doDeadlift(crossFit);
+        crossFit.doDeadlift(gym);
     }
 }

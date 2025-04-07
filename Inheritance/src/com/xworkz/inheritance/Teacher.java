@@ -30,4 +30,7 @@ public class Teacher extends Profession {
         super.communicate();
         System.out.println("Running communicate in teacher...");
     }
+    public void teachSubject() {
+        System.out.println("Running teach subjects in teacher");
+    }
 }

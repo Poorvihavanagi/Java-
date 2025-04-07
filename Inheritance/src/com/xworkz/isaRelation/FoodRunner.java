@@ -2,6 +2,7 @@ package com.xworkz.isaRelation;
 
 import com.xworkz.inheritance.Food;
 import com.xworkz.inheritance.Pizza;
+import com.xworkz.inheritance.Sandwich;
 
 public class FoodRunner
 {
@@ -20,5 +21,9 @@ public class FoodRunner
         food.serve();
         food.eat();
         food.store();
+
+        System.out.println("----------------------------------------");
+        Sandwich sandwich=new Sandwich();
+        sandwich.toast(sandwich);
     }
 }

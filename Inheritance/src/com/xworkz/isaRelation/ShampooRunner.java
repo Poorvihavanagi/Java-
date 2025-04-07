@@ -1,6 +1,7 @@
 package com.xworkz.isaRelation;
 
 import com.xworkz.inheritance.HairCare;
+import com.xworkz.inheritance.HerbalShampoo;
 import com.xworkz.inheritance.Shampoo;
 
 public class ShampooRunner
@@ -21,5 +22,10 @@ public class ShampooRunner
         shampoo.rinse();
         shampoo.nourish();
         shampoo.fragrance();
+
+        System.out.println("-------------------------------------------");
+        HerbalShampoo herbalShampoo=new HerbalShampoo();
+        herbalShampoo.applyHerbs(herbalShampoo);
+
     }
 }

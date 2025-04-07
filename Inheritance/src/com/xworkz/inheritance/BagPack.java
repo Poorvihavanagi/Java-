@@ -31,4 +31,8 @@ public class BagPack extends Bag {
         super.organizeItems();
         System.out.println("Running organizeItems in BagPack");
     }
+
+    public void buckleStrap() {
+        System.out.println("Buckling the BagPack strap");
+    }
 }

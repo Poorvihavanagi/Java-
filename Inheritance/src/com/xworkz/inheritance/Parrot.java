@@ -31,4 +31,8 @@ public class Parrot extends Bird {
         super.buildNest();
         System.out.println("Running build nest in parrot...");
     }
+
+    public void layEggs(){
+        System.out.println("Running birds laying eggs in parrot");
+    }
 }

@@ -31,4 +31,7 @@ public class WoodenDoor extends Door {
         super.checkMaterial();
         System.out.println("Running check Material in wooden door...");
     }
+    public void polish() {
+        System.out.println("Running polish in wooden door");
+    }
 }

@@ -2,6 +2,7 @@ package com.xworkz.isaRelation;
 
 import com.xworkz.inheritance.Beverage;
 import com.xworkz.inheritance.Juice;
+import com.xworkz.inheritance.Smoothie;
 
 public class JuiceRunner {
     public static void main(String[] args) {
@@ -20,5 +21,10 @@ public class JuiceRunner {
         juice.checkTemperature();
         juice.shake();
         juice.serve();
+
+        System.out.println("-------------------------------------------");
+        Smoothie smoothie=new Smoothie();
+        smoothie.addIce(beverage);
+        smoothie.addIce(smoothie);
     }
 }

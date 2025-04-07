@@ -1,5 +1,6 @@
 package com.xworkz.isaRelation;
 
+import com.xworkz.inheritance.Bus;
 import com.xworkz.inheritance.Metro;
 import com.xworkz.inheritance.Transportation;
 
@@ -12,6 +13,7 @@ public class MetroRunner
         metro.fuel();
         metro.capacity();
         metro.speed();
+
         System.out.println("----------------------------------------------------------------");
         Transportation transportation = new Metro();
         transportation.move();
@@ -19,5 +21,9 @@ public class MetroRunner
         transportation.fuel();
         transportation.capacity();
         transportation.speed();
+
+        System.out.println("----------------------------------------------------------------");
+        Bus bus=new Bus();
+        bus.boardPassengers(bus);
     }
 }

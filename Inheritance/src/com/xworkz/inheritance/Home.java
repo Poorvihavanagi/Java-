@@ -31,4 +31,8 @@ public class Home extends Building {
         super.provideElectricity();
         System.out.println("Running provide Electricity in home...");
     }
+
+    public void cleanHome(){
+        System.out.println("Running clean home ");
+    }
 }

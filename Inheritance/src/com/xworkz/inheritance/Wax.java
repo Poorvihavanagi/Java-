@@ -31,4 +31,8 @@ public class Wax extends Candle {
         super.provideLight();
         System.out.println("Running candle light in wax...");
     }
+
+    public void mold(){
+        System.out.println("Running mold candle in wax");
+    }
 }

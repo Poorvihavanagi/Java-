@@ -31,4 +31,7 @@ public class Cookie extends Baked {
         super.serve();
         System.out.println("Running serve in Cookie");
     }
+    public void slice(){
+        System.out.println("Running slice in cookie");
+    }
 }

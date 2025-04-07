@@ -1,5 +1,6 @@
 package com.xworkz.isaRelation;
 
+import com.xworkz.inheritance.AnalogClock;
 import com.xworkz.inheritance.Clock;
 import com.xworkz.inheritance.DigitalClock;
 
@@ -22,5 +23,9 @@ public class ClockRunner
         clock.stopAlarm();
         clock.checkBattery();
         clock.adjustTime();
+
+        System.out.println("-------------------------");
+        AnalogClock analogClock=new AnalogClock();
+        analogClock.windClock(analogClock);
     }
 }

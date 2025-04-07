@@ -26,4 +26,7 @@ public class Report extends Document {
         super.viewing();
         System.out.println("Running viewing in report");
     }
+    public void addCharts() {
+        System.out.println("Running add charts in report");
+    }
 }

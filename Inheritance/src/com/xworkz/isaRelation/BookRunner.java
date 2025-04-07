@@ -2,6 +2,7 @@ package com.xworkz.isaRelation;
 
 import com.xworkz.inheritance.Book;
 import com.xworkz.inheritance.Material;
+import com.xworkz.inheritance.TextBook;
 
 public class BookRunner
 {
@@ -21,5 +22,9 @@ public class BookRunner
         book.close();
         book.bookmark();
         book.checkPages();
+
+        System.out.println("---------------------------------");
+        TextBook textBook=new TextBook();
+        textBook.subject(book);
     }
 }

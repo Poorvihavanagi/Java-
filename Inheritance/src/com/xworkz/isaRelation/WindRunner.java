@@ -1,6 +1,7 @@
 package com.xworkz.isaRelation;
 
 import com.xworkz.inheritance.Breeze;
+import com.xworkz.inheritance.StormWind;
 import com.xworkz.inheritance.Wind;
 
 public class WindRunner
@@ -21,5 +22,9 @@ public class WindRunner
         wind.increaseSpeed();
         wind.decreaseSpeed();
         wind.carryParticles();
+
+        System.out.println("----------------------------------------------");
+        StormWind stormWind=new StormWind();
+        stormWind.coolEnvironment(stormWind);
     }
 }

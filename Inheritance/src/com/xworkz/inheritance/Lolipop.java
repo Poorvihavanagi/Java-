@@ -29,6 +29,10 @@ public class Lolipop extends Candy {
     @Override
     public void checkFlavor() {
         super.checkFlavor();
-        System.out.println("Running checkFlavor in lolipop");
+        System.out.println("Running check Flavor in lollipop");
+    }
+
+    public void lick(){
+        System.out.println("Running lick in lollipop");
     }
 }

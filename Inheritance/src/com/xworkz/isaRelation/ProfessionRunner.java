@@ -1,5 +1,6 @@
 package com.xworkz.isaRelation;
 
+import com.xworkz.inheritance.Engineer;
 import com.xworkz.inheritance.Profession;
 import com.xworkz.inheritance.Teacher;
 public class ProfessionRunner
@@ -19,5 +20,9 @@ public class ProfessionRunner
         profession.followRules();
         profession.gainExperience();
         profession.communicate();
+
+        System.out.println("--------------------------------------------");
+        Engineer engineer=new Engineer();
+        engineer.developSolution(engineer);
     }
 }

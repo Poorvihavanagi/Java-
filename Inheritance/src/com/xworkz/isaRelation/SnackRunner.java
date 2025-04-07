@@ -2,6 +2,7 @@
 package com.xworkz.isaRelation;
 
 import com.xworkz.inheritance.Chips;
+import com.xworkz.inheritance.Popcorn;
 import com.xworkz.inheritance.Snack;
 
 public class SnackRunner {
@@ -21,5 +22,9 @@ public class SnackRunner {
         snack.open();
         snack.eat();
         snack.enjoy();
+
+        System.out.println("-----------------------------------------------------");
+        Popcorn popcorn=new Popcorn();
+        popcorn.addButter(popcorn);
     }
 }

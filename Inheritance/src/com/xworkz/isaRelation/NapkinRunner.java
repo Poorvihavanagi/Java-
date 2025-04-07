@@ -2,6 +2,7 @@ package com.xworkz.isaRelation;
 
 import com.xworkz.inheritance.Cloth;
 import com.xworkz.inheritance.Napkin;
+import com.xworkz.inheritance.Towel;
 
 public class NapkinRunner {
     public static void main(String[] args) {
@@ -12,6 +13,7 @@ public class NapkinRunner {
         napkin.fold();
         napkin.dry();
         napkin.reuse();
+
         System.out.println("----------------------------------------------------");
         Cloth cloth = new Napkin();
         cloth.absorb();
@@ -19,5 +21,9 @@ public class NapkinRunner {
         cloth.fold();
         cloth.dry();
         cloth.reuse();
+
+        System.out.println("----------------------------------------------------");
+        Towel towel=new Towel();
+        towel.dryBody(towel);
     }
 }

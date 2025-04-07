@@ -31,4 +31,7 @@ public class WashingMachine extends Appliances {
         super.displayBrand();
         System.out.println("Running display brand in washing machine...");
     }
+    public void drainWater() {
+        System.out.println("Washing machine is draining the water...");
+    }
 }
