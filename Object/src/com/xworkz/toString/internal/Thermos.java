@@ -14,4 +14,9 @@ public class Thermos {
     public String toString() {
         return "Thermos{Brand='" + brand + "', Capacity=" + capacity + "ml, Color='" + color + "'}";
     }
+    @Override
+    public int hashCode(){
+        System.out.println("Default hash code: " + super.hashCode());
+        return 27;
+    }
 }

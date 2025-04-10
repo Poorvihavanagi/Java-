@@ -15,4 +15,9 @@ public class Furniture {
     public String toString() {
         return "Furniture{Type: " + type + ", Material: " + material + ", Price: " + price + "}";
     }
+    @Override
+    public int hashCode(){
+        System.out.println("Default hash code: " + super.hashCode());
+        return -250;
+    }
 }

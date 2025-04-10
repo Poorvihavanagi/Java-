@@ -10,8 +10,13 @@ public class Printer {
         this.printTechnology = printTechnology;
         this.pagesPerMinute = pagesPerMinute;
     }
-
+    @Override
     public String toString() {
         return "Printer{" + "brand='" + brand + '\'' + ", printTechnology='" + printTechnology + '\'' + ", pagesPerMinute=" + pagesPerMinute + '}';
+    }
+    @Override
+    public int hashCode(){
+        System.out.println("Default hash code: " + super.hashCode());
+        return 256;
     }
 }

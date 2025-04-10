@@ -15,4 +15,9 @@ public class Tripod
     public String toString() {
         return "Tripod{brand='" + brand + "', maxHeight=" + maxHeight + ", material='" + material + "'}";
     }
+    @Override
+    public int hashCode(){
+        System.out.println("Default hash code: " + super.hashCode());
+        return 987;
+    }
 }

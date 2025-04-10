@@ -14,4 +14,9 @@ public class PowerBank {
     public String toString() {
         return "PowerBank{brand='" + brand + "', capacity=" + capacity + "mAh, ports=" + ports + "}";
     }
+    @Override
+    public int hashCode(){
+        System.out.println("Default hash code: " + super.hashCode());
+        return -123;
+    }
 }

@@ -11,8 +11,13 @@ public class NoteBook {
         this.pages = pages;
         this.type = type;
     }
-
+    @Override
     public String toString() {
         return "Notebook{Brand='" + brand + "', Pages=" + pages + ", Type='" + type + "'}";
+    }
+    @Override
+    public int hashCode(){
+        System.out.println("Default hash code: " + super.hashCode());
+        return -700;
     }
 }

@@ -10,8 +10,13 @@ public class MeasuringTape {
         this.length = length;
         this.unit = unit;
     }
-
+    @Override
     public String toString() {
         return "MeasuringTape{Brand='" + brand + "', Length=" + length + unit + "}";
+    }
+    @Override
+    public int hashCode(){
+        System.out.println("Default hash code: " + super.hashCode());
+        return 580;
     }
 }

@@ -10,8 +10,13 @@ public class Gloves {
         this.size = size;
         this.usageType = usageType;
     }
-
+    @Override
     public String toString() {
         return "Gloves{material='" + material + "', size='" + size + "', usageType='" + usageType + "'}";
+    }
+    @Override
+    public int hashCode(){
+        System.out.println("Default hash code: " + super.hashCode());
+        return -280;
     }
 }

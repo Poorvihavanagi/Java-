@@ -10,8 +10,13 @@ public class Bottle {
         this.capacity = capacity;
         this.brand = brand;
     }
-
+    @Override
     public String toString() {
         return "Bottle{Type='" + type + "', Capacity=" + capacity + "ml, Brand='" + brand + "'}";
+    }
+    @Override
+    public int hashCode() {
+        System.out.println("Default hash code: " + super.hashCode());
+        return -40;
     }
 }

@@ -15,4 +15,9 @@ public class Key {
     public String toString() {
         return "Key{" + "Shape Code='" + shapeCode + "'" + ", Engraving='" + engraving + "'" + ", Key Type='" + keyType + "'" + '}';
     }
+    @Override
+    public int hashCode(){
+        System.out.println("Default hash code: " + super.hashCode());
+        return 500;
+    }
 }

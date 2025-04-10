@@ -15,4 +15,9 @@ public class Kettle {
     public String toString() {
         return "Kettle{Capacity=" + capacityInLiters + "L, Brand='" + brand + "', Material='" + material + "'}";
     }
+    @Override
+    public int hashCode(){
+        System.out.println("Default hash code: " + super.hashCode());
+        return -370;
+    }
 }

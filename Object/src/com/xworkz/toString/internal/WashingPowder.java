@@ -14,4 +14,9 @@ public class WashingPowder {
     public String toString() {
         return "WashingPowder{Brand='" + brand + "', Weight=" + weight + "g, Fragrance='" + fragrance + "'}";
     }
+    @Override
+    public int hashCode(){
+        System.out.println("Default hash code: " + super.hashCode());
+        return 907;
+    }
 }

@@ -15,4 +15,9 @@ public class IronBox {
     public String toString() {
         return "IronBox{Brand='" + brand + "', Wattage=" + wattage + "W, Color='" + color + "'}";
     }
+    @Override
+    public int hashCode(){
+        System.out.println("Default hash code: " + super.hashCode());
+        return -340;
+    }
 }

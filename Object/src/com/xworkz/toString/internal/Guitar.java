@@ -10,8 +10,13 @@ public class Guitar {
         this.numberOfStrings = numberOfStrings;
         this.brand = brand;
     }
-
+    @Override
     public String toString() {
         return "Guitar{" + "type='" + type + '\'' + ", numberOfStrings=" + numberOfStrings + ", brand='" + brand + '\'' + '}';
+    }
+    @Override
+    public int hashCode(){
+        System.out.println("Default hash code: " + super.hashCode());
+        return -290;
     }
 }

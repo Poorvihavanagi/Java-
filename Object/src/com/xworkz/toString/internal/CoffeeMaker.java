@@ -15,4 +15,10 @@ public class CoffeeMaker {
     public String toString() {
         return "CoffeeMaker{Brand='" + brand + "', Capacity=" + capacityInCups + " cups, Brew Type='" + brewType + "'}";
     }
+
+    @Override
+    public int hashCode() {
+        System.out.println("Default hash code: " + super.hashCode());
+        return -150;
+    }
 }

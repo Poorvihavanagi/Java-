@@ -10,8 +10,13 @@ public class Bucket {
         this.capacity = capacity;
         this.color = color;
     }
-
+    @Override
     public String toString() {
         return "Bucket{Material='" + material + "', Capacity=" + capacity + "L, Color='" + color + "'}";
+    }
+    @Override
+    public int hashCode() {
+        System.out.println("Default hash code: " + super.hashCode());
+        return -60;
     }
 }

@@ -11,8 +11,14 @@ public class Calendar
         this.type = type;
         this.theme = theme;
     }
-
+    @Override
     public String toString() {
         return "Calendar{" + "year=" + year + ", type='" + type + '\'' + ", theme='" + theme + '\'' + '}';
+    }
+    @Override
+    public int hashCode() {
+        int original = super.hashCode();
+        System.out.println("Original hash code  " + original);
+        return -80;
     }
 }

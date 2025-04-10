@@ -10,8 +10,13 @@ public class Laptop {
         this.processor = processor;
         this.ram = ram;
     }
-
+    @Override
     public String toString() {
         return "Laptop{Brand='" + brand + "', Processor='" + processor + "', RAM=" + ram + "GB}";
+    }
+    @Override
+    public int hashCode(){
+        System.out.println("Default hash code: " + super.hashCode());
+        return 510;
     }
 }

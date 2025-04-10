@@ -15,4 +15,9 @@ public class Perfume {
     public String toString() {
         return "Perfume{fragrance='" + fragrance + "', brand='" + brand + "', volume=" + volume + "ml}";
     }
+    @Override
+    public int hashCode(){
+        System.out.println("Default hash code: " + super.hashCode());
+        return -730;
+    }
 }

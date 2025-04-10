@@ -15,4 +15,9 @@ public class Animal {
     public String toString() {
         return "Animal{Name: " + name + ", Species: " + species + ", Age: " + age + "}";
     }
+    @Override
+    public int hashCode(){
+        System.out.println("Default code: " +super.hashCode());
+        return 10;
+    }
 }

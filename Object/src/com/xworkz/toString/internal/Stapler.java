@@ -10,8 +10,13 @@ public class Stapler {
         this.size = size;
         this.capacity = capacity;
     }
-
+    @Override
     public String toString() {
         return "Stapler{Brand='" + brand + "', Size='" + size + "', Capacity=" + capacity + " staples}";
+    }
+    @Override
+    public int hashCode(){
+        System.out.println("Default hash code: " + super.hashCode());
+        return 39;
     }
 }

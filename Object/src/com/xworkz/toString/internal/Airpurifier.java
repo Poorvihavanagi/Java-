@@ -10,8 +10,13 @@ public class Airpurifier {
         this.filterType = filterType;
         this.areaCoverage = areaCoverage;
     }
-
+    @Override
     public String toString() {
         return "AirPurifier{Brand='" + brand + "', Filter Type='" + filterType + "', Area Coverage=" + areaCoverage + "sqft}";
+    }
+    @Override
+    public int hashCode(){
+        System.out.println("Default hashcode: " +super.hashCode());
+        return 60;
     }
 }

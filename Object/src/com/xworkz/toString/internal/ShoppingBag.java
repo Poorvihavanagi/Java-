@@ -10,8 +10,13 @@ public class ShoppingBag {
         this.color = color;
         this.capacity = capacity;
     }
-
+    @Override
     public String toString() {
         return "ShoppingBag{Material='" + material + "', Color='" + color + "', Capacity=" + capacity + "kg}";
+    }
+    @Override
+    public int hashCode(){
+        System.out.println("Default hash code: " + super.hashCode());
+        return 93;
     }
 }

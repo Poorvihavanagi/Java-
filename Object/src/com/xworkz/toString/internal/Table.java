@@ -10,8 +10,13 @@ public class Table {
         this.material = material;
         this.height = height;
     }
-
+    @Override
     public String toString() {
         return "Table{Shape='" + shape + "', Material='" + material + "', Height=" + height + "cm}";
+    }
+    @Override
+    public int hashCode(){
+        System.out.println("Default hash code: " + super.hashCode());
+        return 97;
     }
 }

@@ -10,8 +10,14 @@ public class Phone {
         this.model = model;
         this.storage = storage;
     }
-
+    @Override
     public String toString() {
         return "Phone{Brand='" + brand + "', Model='" + model + "', Storage=" + storage + "GB}";
     }
+    @Override
+    public int hashCode(){
+        System.out.println("Default hash code: " + super.hashCode());
+        return -740;
+    }
+
 }

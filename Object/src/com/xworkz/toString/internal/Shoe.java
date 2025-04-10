@@ -15,4 +15,9 @@ public class Shoe {
     public String toString() {
         return "Shoe{@Brand: " + brand + ", @Size: " + size + ", @Color: " + color + "}";
     }
+    @Override
+    public int hashCode(){
+        System.out.println("Default hash code: " + super.hashCode());
+        return 75;
+    }
 }

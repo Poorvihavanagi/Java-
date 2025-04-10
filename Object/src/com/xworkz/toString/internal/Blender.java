@@ -11,7 +11,15 @@ public class Blender {
         this.jarMaterial = jarMaterial;
     }
 
+    @Override
     public String toString() {
-        return "Blender{" + "brand='" + brand + '\'' + ", powerWatt=" + powerWatt + ", jarMaterial='" + jarMaterial + '\'' + '}';
+        return "Blender{" + "brand='" + brand + ", powerWatt=" + powerWatt + ", jarMaterial='" + jarMaterial + '}';
+    }
+
+    @Override
+    public int hashCode() {
+        System.out.println("Default hash code: " + super.hashCode());
+        return -30;
     }
 }
+

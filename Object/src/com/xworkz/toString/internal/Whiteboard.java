@@ -14,4 +14,9 @@ public class Whiteboard {
     public String toString() {
         return "Whiteboard{Size='" + size + "', FrameMaterial='" + frameMaterial + "', Magnetic=" + magnetic + "}";
     }
+    @Override
+    public int hashCode(){
+        System.out.println("Default hash code: " + super.hashCode());
+        return 937;
+    }
 }

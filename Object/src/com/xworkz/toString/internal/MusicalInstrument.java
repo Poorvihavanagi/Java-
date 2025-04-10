@@ -15,4 +15,9 @@ public class MusicalInstrument {
     public String toString() {
         return "MusicalInstrument{Name: " + name + ", Type: " + type + ", Price: " + price + "}";
     }
+    @Override
+    public int hashCode(){
+        System.out.println("Default hash code: " + super.hashCode());
+        return -660;
+    }
 }

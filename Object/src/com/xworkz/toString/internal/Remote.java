@@ -14,4 +14,9 @@ public class Remote {
     public String toString() {
         return "Remote{deviceType='" + deviceType + "', brand='" + brand + "', range=" + range + " meters}";
     }
+    @Override
+    public int hashCode(){
+        System.out.println("Default hash code: " + super.hashCode());
+        return 999;
+    }
 }

@@ -14,4 +14,9 @@ public class TissueBox {
     public String toString() {
         return "TissueBox{brand='" + brand + "', sheetCount=" + sheetCount + ", material='" + material + "'}";
     }
+    @Override
+    public int hashCode(){
+        System.out.println("Default hash code: " + super.hashCode());
+        return 36;
+    }
 }

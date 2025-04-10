@@ -10,8 +10,13 @@ public class Soap {
         this.scent = scent;
         this.weight = weight;
     }
-
+    @Override
     public String toString() {
         return "Soap{Brand='" + brand + "', Scent='" + scent + "', Weight=" + weight + "g}";
+    }
+    @Override
+    public int hashCode(){
+        System.out.println("Default hash code: " + super.hashCode());
+        return 55;
     }
 }

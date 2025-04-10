@@ -15,4 +15,9 @@ public class Jacket {
     public String toString() {
         return "Jacket{Material='" + material + "', Size='" + size + "', Closure='" + closureType + "'}";
     }
+    @Override
+    public int hashCode(){
+        System.out.println("Default hash code: " + super.hashCode());
+        return -350;
+    }
 }

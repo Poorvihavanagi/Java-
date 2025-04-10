@@ -10,8 +10,13 @@ public class HandSanitizer {
         this.alcoholPercentage = alcoholPercentage;
         this.volume = volume;
     }
-
+    @Override
     public String toString() {
         return "HandSanitizer{Brand='" + brand + "', Alcohol=" + alcoholPercentage + "%, Volume=" + volume + "ml}";
+    }
+    @Override
+    public int hashCode(){
+        System.out.println("Default hash code: " + super.hashCode());
+        return -310;
     }
 }

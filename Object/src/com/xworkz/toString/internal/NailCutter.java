@@ -15,4 +15,9 @@ public class NailCutter {
     public String toString() {
         return "NailCutter{" + "Spring Type='" + springType + "'" + ", Blade Sharpness='" + bladeSharpness + "'" + ", Safety Lock=" + safetyLock + '}';
     }
+    @Override
+    public int hashCode(){
+        System.out.println("Default hash code: " + super.hashCode());
+        return -670;
+    }
 }

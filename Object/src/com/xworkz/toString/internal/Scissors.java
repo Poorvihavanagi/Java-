@@ -10,8 +10,13 @@ public class Scissors {
         this.type = type;
         this.length = length;
     }
-
+    @Override
     public String toString() {
         return "Scissors{Brand='" + brand + "', Type='" + type + "', Length=" + length + "cm}";
+    }
+    @Override
+    public int hashCode(){
+        System.out.println("Default hash code: " + super.hashCode());
+        return 69;
     }
 }

@@ -10,8 +10,13 @@ public class RemoteControl {
         this.numberOfButtons = numberOfButtons;
         this.hasBattery = hasBattery;
     }
-
+    @Override
     public String toString() {
         return "RemoteControl{DeviceType='" + deviceType + "', NumberOfButtons=" + numberOfButtons + ", HasBattery=" + hasBattery + "}";
+    }
+    @Override
+    public int hashCode(){
+        System.out.println("Default hash code: " + super.hashCode());
+        return 856;
     }
 }

@@ -10,8 +10,13 @@ public class LaundryBasket {
         this.color = color;
         this.capacity = capacity;
     }
-
+    @Override
     public String toString() {
         return "LaundryBasket{Material='" + material + "', Color='" + color + "', Capacity=" + capacity + "L}";
+    }
+    @Override
+    public int hashCode(){
+        System.out.println("Default hash code: " + super.hashCode());
+        return 520;
     }
 }

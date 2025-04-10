@@ -10,8 +10,13 @@ public class Chair {
         this.color = color;
         this.height = height;
     }
-
+    @Override
     public String toString() {
         return "Chair{Material='" + material + "', Color='" + color + "', Height=" + height + "}";
+    }
+    @Override
+    public int hashCode(){
+        System.out.println("Default hash code: " +super.hashCode());
+        return -100;
     }
 }

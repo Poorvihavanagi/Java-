@@ -10,8 +10,13 @@ public class GlassCleaner {
         this.volume = volume;
         this.scent = scent;
     }
-
+    @Override
     public String toString() {
         return "GlassCleaner{Brand='" + brand + "', Volume=" + volume + "ml, Scent='" + scent + "'}";
+    }
+    @Override
+    public int hashCode(){
+        System.out.println("Default hash code: " + super.hashCode());
+        return -270;
     }
 }

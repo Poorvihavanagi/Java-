@@ -10,8 +10,13 @@ public class Shampoo {
         this.type = type;
         this.volume = volume;
     }
-
+    @Override
     public String toString() {
         return "Shampoo{Brand='" + brand + "', Type='" + type + "', Volume=" + volume + "ml}";
+    }
+    @Override
+    public int hashCode(){
+        System.out.println("Default hash code: " + super.hashCode());
+        return 97;
     }
 }

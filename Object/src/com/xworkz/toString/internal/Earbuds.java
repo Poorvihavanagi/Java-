@@ -15,4 +15,9 @@ public class Earbuds {
     public String toString() {
         return "Earbuds{Brand='" + brand + "', Battery Life=" + batteryLife + "hrs, Noise Cancellation='" + noiseCancellation + "'}";
     }
+    @Override
+    public int hashCode(){
+        System.out.println("Default hash code: " + super.hashCode());
+        return -230;
+    }
 }

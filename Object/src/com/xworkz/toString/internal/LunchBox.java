@@ -10,8 +10,13 @@ public class LunchBox {
         this.containers = containers;
         this.insulationType = insulationType;
     }
-
+    @Override
     public String toString() {
         return "LunchBox{Brand='" + brand + "', Containers=" + containers + ", InsulationType='" + insulationType + "'}";
+    }
+    @Override
+    public int hashCode(){
+        System.out.println("Default hash code: " + super.hashCode());
+        return 530;
     }
 }

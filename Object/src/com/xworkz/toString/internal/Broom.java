@@ -10,8 +10,13 @@ public class Broom {
         this.handleLength = handleLength;
         this.usage = usage;
     }
-
+    @Override
     public String toString() {
         return "Broom{BristleType='" + bristleType + "', HandleLength='" + handleLength + "', Usage='" + usage + "'}";
+    }
+    @Override
+    public int hashCode() {
+        System.out.println("Default hash code: " + super.hashCode());
+        return -50;
     }
 }

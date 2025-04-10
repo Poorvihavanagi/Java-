@@ -15,4 +15,9 @@ public class Movie
     public String toString(){
         return "Movie{Title: "+title+",Director: "+director+", Duration: "+duration+"}";
     }
+    @Override
+    public int hashCode(){
+        System.out.println("Default hash code: " + super.hashCode());
+        return -650;
+    }
 }

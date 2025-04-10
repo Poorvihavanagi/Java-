@@ -8,5 +8,9 @@ public class StudentRunner
 
         Student student=new Student("Poorvi",21,"JAVA");
         System.out.println(student);
+
+        int hash = student.hashCode();
+        System.out.println("Hash Code: " + hash);
+        System.out.println("Original Code: " + System.identityHashCode(student));
     }
 }

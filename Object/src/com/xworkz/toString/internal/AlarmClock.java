@@ -10,8 +10,14 @@ public class AlarmClock {
         this.type = type;
         this.snooze = snooze;
     }
-
+    @Override
     public String toString() {
+
         return "AlarmClock{Brand='" + brand + "', Type='" + type + "', Snooze=" + snooze + "}";
+    }
+    @Override
+    public int hashCode(){
+        System.out.println("Default hash code: " +super.hashCode());
+        return -20;
     }
 }

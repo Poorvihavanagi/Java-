@@ -13,8 +13,11 @@ public class Oven {
 
     @Override
     public String toString() {
-        return "Oven{Model Number: " + modelNumber +
-                ", Has Grill: " + hasGrill +
-                ", Power Consumption: " + powerConsumption + "W}";
+        return "Oven{Model Number: " + modelNumber + ", Has Grill: " + hasGrill + ", Power Consumption: " + powerConsumption + "W}";
+    }
+    @Override
+    public int hashCode(){
+        System.out.println("Default hash code: " + super.hashCode());
+        return -710;
     }
 }

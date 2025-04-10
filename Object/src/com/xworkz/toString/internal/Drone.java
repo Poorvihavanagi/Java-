@@ -11,8 +11,13 @@ public class Drone {
             this.flightTime = flightTime;
             this.cameraQuality = cameraQuality;
         }
-
+        @Override
         public String toString() {
             return "Drone{Model='" + model + "', Flight Time=" + flightTime + " mins, Camera='" + cameraQuality + "'}";
+        }
+        @Override
+        public int hashCode(){
+            System.out.println("Default hash code: " + super.hashCode());
+            return -200;
         }
 }

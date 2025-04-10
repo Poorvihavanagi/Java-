@@ -11,7 +11,14 @@ public class Comb {
         this.teethCount = teethCount;
     }
 
+    @Override
     public String toString() {
         return "Comb{Type='" + type + "', Material='" + material + "', Teeth Count=" + teethCount + "}";
+    }
+
+    @Override
+    public int hashCode() {
+        System.out.println("Default hash code: " + super.hashCode());
+        return -160;
     }
 }

@@ -6,5 +6,9 @@ public class NoteBookRunner {
     public static void main(String[] args) {
         NoteBook notebook = new NoteBook("Classmate", 180, "Ruled");
         System.out.println(notebook);
+
+        int hash = notebook.hashCode();
+        System.out.println("Hash Code: " + hash);
+        System.out.println("Original Code: " + System.identityHashCode(notebook));
     }
 }

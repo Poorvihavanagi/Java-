@@ -15,4 +15,10 @@ public class Cup {
     public String toString() {
         return "Cup{Material: " + material + ", Capacity: " + capacity + "ml, Brand: " + brand + "}";
     }
+
+    @Override
+    public int hashCode() {
+        System.out.println("Default hash code: " + super.hashCode());
+        return -170;
+    }
 }

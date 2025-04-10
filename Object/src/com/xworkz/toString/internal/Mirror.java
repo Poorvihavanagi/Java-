@@ -15,4 +15,9 @@ public class Mirror {
     public String toString() {
         return "Mirror{Shape='" + shape + "', Height=" + heightInInches + " inches, Wall Mounted=" + isWallMounted + "}";
     }
+    @Override
+    public int hashCode(){
+        System.out.println("Default hash code: " + super.hashCode());
+        return -600;
+    }
 }

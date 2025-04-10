@@ -10,8 +10,13 @@ public class SewingMachine {
         this.stitchType = stitchType;
         this.motorPower = motorPower;
     }
-
+    @Override
     public String toString() {
         return "SewingMachine{" + "brand='" + brand + '\'' + ", stitchType='" + stitchType + '\'' + ", motorPower=" + motorPower + '}';
+    }
+    @Override
+    public int hashCode(){
+        System.out.println("Default hash code: " + super.hashCode());
+        return 45;
     }
 }

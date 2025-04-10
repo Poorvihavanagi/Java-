@@ -15,4 +15,10 @@ public class Curtains {
     public String toString() {
         return "Curtains{Fabric='" + fabricType + "', Length=" + lengthInInches + "in, Pattern='" + colorPattern + "'}";
     }
+
+    @Override
+    public int hashCode() {
+        System.out.println("Default hash code: " + super.hashCode());
+        return -180;
+    }
 }

@@ -15,4 +15,9 @@ public class Jug {
     public String toString() {
         return "Jug{" + "Design='" + design + "'" + ", Material='" + material + "'" + ", Has Lid=" + hasLid + '}';
     }
+    @Override
+    public int hashCode(){
+        System.out.println("Default hash code: " + super.hashCode());
+        return -360;
+    }
 }

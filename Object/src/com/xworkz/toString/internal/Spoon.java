@@ -10,8 +10,13 @@ public class Spoon {
         this.type = type;
         this.length = length;
     }
-
+    @Override
     public String toString() {
         return "Spoon{material='" + material + "', type='" + type + "', length=" + length + "cm}";
+    }
+    @Override
+    public int hashCode(){
+        System.out.println("Default hash code: " + super.hashCode());
+        return 36;
     }
 }

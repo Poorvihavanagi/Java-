@@ -14,4 +14,9 @@ public class Television {
     public String toString() {
         return "Television{Brand='" + brand + "', Size=" + size + " inch, Type='" + type + "'}";
     }
+    @Override
+    public int hashCode(){
+        System.out.println("Default hash code: " + super.hashCode());
+        return 80;
+    }
 }

@@ -16,4 +16,9 @@ public class MakeUp
     public String toString(){
         return "MakeUp{Brand: " + brand + ", Type: " + type + ", Price: " + price + "}";
     }
+    @Override
+    public int hashCode(){
+        System.out.println("Default hash code: " + super.hashCode());
+        return 560;
+    }
 }

@@ -13,10 +13,11 @@ public class ToothBrush {
 
     @Override
     public String toString() {
-        return "Toothbrush{" +
-                "Bristle Shape='" + shape + '\'' +
-                ", Handle Grip='" + handleGrip + '\'' +
-                ", Brush Head Size='" + brushHeadSize + '\'' +
-                '}';
+        return "Toothbrush{" + "Bristle Shape='" + shape + '\'' + ", Handle Grip='" + handleGrip + '\'' + ", Brush Head Size='" + brushHeadSize + '\'' + '}';
+    }
+    @Override
+    public int hashCode(){
+        System.out.println("Default hash code: " + super.hashCode());
+        return 979;
     }
 }

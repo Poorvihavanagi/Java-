@@ -15,4 +15,10 @@ public class AirConditioner {
     public String toString() {
         return "AirConditioner{Brand='" + brand + "', Tonnage=" + tonnage + "T, Cooling Technology='" + coolingTechnology + "'}";
     }
+
+    @Override
+    public int hashCode() {
+        System.out.println("Default hashcode: " +super.hashCode());
+        return -89;
+    }
 }

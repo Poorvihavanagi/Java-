@@ -11,7 +11,14 @@ public class Cushion {
         this.fabric = fabric;
     }
 
+    @Override
     public String toString() {
         return "Cushion{color='" + color + "', shape='" + shape + "', fabric='" + fabric + "'}";
+    }
+
+    @Override
+    public int hashCode() {
+        System.out.println("Default hash code: " + super.hashCode());
+        return -190;
     }
 }

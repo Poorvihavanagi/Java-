@@ -14,4 +14,9 @@ public class VacuumCleaner {
     public String toString() {
         return "VacuumCleaner{Brand='" + brand + "', Power=" + power + "W, Type='" + type + "'}";
     }
+    @Override
+    public int hashCode(){
+        System.out.println("Default hash code: " + super.hashCode());
+        return 197;
+    }
 }

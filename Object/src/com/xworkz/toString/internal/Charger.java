@@ -10,8 +10,13 @@ public class Charger {
         this.output = output;
         this.brand = brand;
     }
-
+    @Override
     public String toString() {
         return "Charger{type='" + type + "', output=" + output + "W, brand='" + brand + "'}";
+    }
+    @Override
+    public int hashCode() {
+        System.out.println("Default hash code: " + super.hashCode());
+        return -120;
     }
 }

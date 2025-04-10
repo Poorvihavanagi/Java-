@@ -15,4 +15,9 @@ public class Keyboard {
     public String toString() {
         return "Keyboard{Layout='" + layout + "', Key Count=" + keyCount + ", Language Support='" + languageSupport + "'}";
     }
+    @Override
+    public int hashCode(){
+        System.out.println("Default hash code: " + super.hashCode());
+        return 550;
+    }
 }

@@ -15,4 +15,9 @@ public class Hotel
     public String toString(){
         return "Hotel{$$name= '" + name + "', $$Star= " + star + ", $$Price per night= " + pricePerNight + "}";
     }
+    @Override
+    public int hashCode(){
+        System.out.println("Default hash code: " + super.hashCode());
+        return -330;
+    }
 }

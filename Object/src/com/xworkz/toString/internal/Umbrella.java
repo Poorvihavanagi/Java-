@@ -15,4 +15,9 @@ public class Umbrella {
     public String toString() {
         return "Umbrella{" + "Rib Count=" + ribCount + ", Wind Resistance='" + windResistance + "'" + ", Open Mechanism='" + openMechanism + "'" + '}';
     }
+    @Override
+    public int hashCode(){
+        System.out.println("Default hash code: " + super.hashCode());
+        return 979;
+    }
 }

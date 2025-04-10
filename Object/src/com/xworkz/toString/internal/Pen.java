@@ -15,4 +15,10 @@ public class Pen {
     public String toString() {
         return "Pen{Brand='" + brand + "', Ink Color='" + inkColor + "', Price=" + price + "}";
     }
+    @Override
+    public int hashCode(){
+        System.out.println("Default hash code: " + super.hashCode());
+        return -720;
+    }
+
 }

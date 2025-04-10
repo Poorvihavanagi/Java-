@@ -15,4 +15,9 @@ public class Pillow {
     public String toString() {
         return "Pillow{Fill Material='" + fillMaterial + "', Size='" + sizeInInches + "', Firmness='" + firmnessLevel + "'}";
     }
+    @Override
+    public int hashCode(){
+        System.out.println("Default hash code: " + super.hashCode());
+        return -760;
+    }
 }

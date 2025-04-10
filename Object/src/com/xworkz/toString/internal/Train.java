@@ -15,4 +15,9 @@ public class Train {
     public String toString() {
         return "Train{Name: " + name + ", Speed: " + speed + " km/h, Coaches: " + coaches + "}";
     }
+    @Override
+    public int hashCode(){
+        System.out.println("Default hash code: " + super.hashCode());
+        return 957;
+    }
 }

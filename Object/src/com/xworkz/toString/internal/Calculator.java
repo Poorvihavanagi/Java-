@@ -10,8 +10,13 @@ public class Calculator {
         this.displayType = displayType;
         this.batteryType = batteryType;
     }
-
+    @Override
     public String toString() {
         return "Calculator{" + "brand='" + brand + '\'' + ", displayType='" + displayType + '\'' + ", batteryType='" + batteryType + '\'' + '}';
+    }
+    @Override
+    public int hashCode() {
+        System.out.println("Default hash code: " + super.hashCode());
+        return -70;
     }
 }

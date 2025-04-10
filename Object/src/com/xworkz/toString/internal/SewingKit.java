@@ -10,8 +10,13 @@ public class SewingKit {
         this.caseType = caseType;
         this.usage = usage;
     }
-
+    @Override
     public String toString() {
         return "SewingKit{Items=" + numberOfItems + ", CaseType='" + caseType + "', Usage='" + usage + "'}";
+    }
+    @Override
+    public int hashCode(){
+        System.out.println("Default hash code: " + super.hashCode());
+        return 39;
     }
 }

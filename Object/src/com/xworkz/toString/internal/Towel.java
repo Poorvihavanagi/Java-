@@ -14,4 +14,9 @@ public class Towel {
     public String toString() {
         return "Towel{Material='" + material + "', Size='" + size + "', Color='" + color + "'}";
     }
+    @Override
+    public int hashCode(){
+        System.out.println("Default hash code: " + super.hashCode());
+        return 927;
+    }
 }

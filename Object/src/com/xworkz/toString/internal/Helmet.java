@@ -11,8 +11,13 @@ public class Helmet
         this.size = size;
         this.color = color;
     }
-
+    @Override
     public String toString() {
         return "Helmet{Brand='" + brand + "', Size='" + size + "', Color='" + color + "'}";
+    }
+    @Override
+    public int hashCode(){
+        System.out.println("Default hash code: " + super.hashCode());
+        return -320;
     }
 }

@@ -15,4 +15,9 @@ public class Blanket {
     public String toString() {
         return "Blanket{Color='" + color + "', Thickness=" + thickness + "cm, Washable=" + washable + "}";
     }
+    @Override
+    public int hashCode() {
+        System.out.println("Default hash code: " + super.hashCode());
+        return -100;
+    }
 }

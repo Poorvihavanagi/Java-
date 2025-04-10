@@ -10,8 +10,13 @@ public class DishRack {
         this.material = material;
         this.color = color;
     }
-
+    @Override
     public String toString() {
         return "DishRack{Tiers=" + tiers + ", Material='" + material + "', Color='" + color + "'}";
+    }
+    @Override
+    public int hashCode(){
+        System.out.println("Default hash code: " + super.hashCode());
+        return -210;
     }
 }

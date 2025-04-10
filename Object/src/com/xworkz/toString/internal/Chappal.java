@@ -10,8 +10,13 @@ public class Chappal {
         this.size = size;
         this.material = material;
     }
-
+    @Override
     public String toString() {
         return "Chappal{Brand='" + brand + "', Size='" + size + "', Material='" + material + "'}";
+    }
+    @Override
+    public int hashCode() {
+        System.out.println("Default hash code: " + super.hashCode());
+        return -110;
     }
 }

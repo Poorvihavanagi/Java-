@@ -15,4 +15,9 @@ public class Dustbin {
     public String toString() {
         return "Dustbin{Color='" + color + "', Capacity=" + capacityInLiters + "L, Material='" + material + "'}";
     }
+    @Override
+    public int hashCode(){
+        System.out.println("Default hash code: " + super.hashCode());
+        return -220;
+    }
 }

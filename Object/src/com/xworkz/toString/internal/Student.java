@@ -15,4 +15,9 @@ public class Student {
     public String toString() {
         return "Student{name='" + name + "', age=" + age + ", course='" + course + "'}";
     }
+    @Override
+    public int hashCode(){
+        System.out.println("Default hash code: " + super.hashCode());
+        return 9;
+    }
 }
