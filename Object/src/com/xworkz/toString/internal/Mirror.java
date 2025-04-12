@@ -20,4 +20,20 @@ public class Mirror {
         System.out.println("Default hash code: " + super.hashCode());
         return -600;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null) {
+            System.out.println("Ref is not null");
+            if (obj instanceof Mirror) {
+                System.out.println("Ref is Mirror, will compare...");
+                Mirror m1 = this;
+                Mirror m2 = (Mirror) obj;
+                if (m1.shape.equals(m2.shape) && m1.heightInInches == m2.heightInInches) {
+                    System.out.println("Both Mirrors are identical");
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
 }

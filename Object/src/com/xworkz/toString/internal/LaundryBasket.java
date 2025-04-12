@@ -19,4 +19,20 @@ public class LaundryBasket {
         System.out.println("Default hash code: " + super.hashCode());
         return 520;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null) {
+            System.out.println("Ref is not null");
+            if (obj instanceof LaundryBasket) {
+                System.out.println("Ref is LaundryBasket, will compare...");
+                LaundryBasket basket1 = this;
+                LaundryBasket basket2 = (LaundryBasket) obj;
+                if (basket1.material.equals(basket2.material) && basket1.color.equals(basket2.color)) {
+                    System.out.println("Both LaundryBaskets are identical");
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
 }

@@ -20,4 +20,20 @@ public class Keyboard {
         System.out.println("Default hash code: " + super.hashCode());
         return 550;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null) {
+            System.out.println("Ref is not null");
+            if (obj instanceof Keyboard) {
+                System.out.println("Ref is Keyboard, will compare...");
+                Keyboard keyboard1 = this;
+                Keyboard keyboard2 = (Keyboard) obj;
+                if (keyboard1.layout.equals(keyboard2.layout) && keyboard1.keyCount == keyboard2.keyCount) {
+                    System.out.println("Both Keyboards are identical");
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
 }

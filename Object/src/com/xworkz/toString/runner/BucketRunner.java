@@ -8,5 +8,13 @@ public class BucketRunner {
 
         int hash = bucket.hashCode();
         System.out.println(new Bucket("Steel", 20, "Blue").hashCode());
+
+        Bucket bucket1 = new Bucket("Plastic", 15, "Red");
+        Bucket bucket2 = new Bucket("Steel", 20, "Blue");
+
+        System.out.println("Checking same location: " + (bucket1 == bucket2));
+        boolean same = bucket2.equals(bucket1);
+        System.out.println("Bucket1 is same as Bucket2: " + same);
+
     }
 }

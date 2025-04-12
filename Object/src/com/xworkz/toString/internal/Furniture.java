@@ -20,4 +20,20 @@ public class Furniture {
         System.out.println("Default hash code: " + super.hashCode());
         return -250;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null) {
+            System.out.println("Ref is not null");
+            if (obj instanceof Furniture) {
+                System.out.println("Ref is Furniture, will compare...");
+                Furniture f1 = this;
+                Furniture f2 = (Furniture) obj;
+                if (f1.type.equals(f2.type)) {
+                    System.out.println("Both Furniture have the same type");
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
 }

@@ -19,4 +19,21 @@ public class Bottle {
         System.out.println("Default hash code: " + super.hashCode());
         return -40;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null) {
+            System.out.println("Ref is not null");
+            if (obj instanceof Bottle) {
+                System.out.println("Ref is Bottle, will compare...");
+                Bottle bottle1 = this;
+                Bottle bottle2 = (Bottle) obj;
+                if (bottle1.brand.equals(bottle2.brand)) {
+                    System.out.println("Both bottles are the same brand");
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
+
 }

@@ -19,4 +19,20 @@ public class SewingKit {
         System.out.println("Default hash code: " + super.hashCode());
         return 39;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null) {
+            System.out.println("Ref is not null");
+            if (obj instanceof SewingKit) {
+                System.out.println("Ref is SewingKit, will compare...");
+                SewingKit kit1 = this;
+                SewingKit kit2 = (SewingKit) obj;
+                if (kit1.numberOfItems == kit2.numberOfItems && kit1.caseType.equals(kit2.caseType) && kit1.usage.equals(kit2.usage)) {
+                    System.out.println("Both sewing kits are identical");
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
 }

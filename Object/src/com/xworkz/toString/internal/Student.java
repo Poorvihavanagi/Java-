@@ -20,4 +20,20 @@ public class Student {
         System.out.println("Default hash code: " + super.hashCode());
         return 9;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null) {
+            System.out.println("Ref is not null");
+            if (obj instanceof Student) {
+                System.out.println("Ref is Student, will compare...");
+                Student s1 = this;
+                Student s2 = (Student) obj;
+                if (s1.name.equals(s2.name) && s1.age == s2.age && s1.course.equals(s2.course)) {
+                    System.out.println("Both students are identical");
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
 }

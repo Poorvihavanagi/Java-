@@ -19,4 +19,21 @@ public class Whiteboard {
         System.out.println("Default hash code: " + super.hashCode());
         return 937;
     }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null) {
+            System.out.println("Ref is not null");
+            if (obj instanceof Whiteboard) {
+                System.out.println("Ref is Whiteboard, will compare...");
+                Whiteboard wb1 = this;
+                Whiteboard wb2 = (Whiteboard) obj;
+                if (wb1.size.equals(wb2.size) && wb1.frameMaterial.equals(wb2.frameMaterial) && wb1.magnetic == wb2.magnetic) {
+                    System.out.println("Both Whiteboards are identical");
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
 }

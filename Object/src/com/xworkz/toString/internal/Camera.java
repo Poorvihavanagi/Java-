@@ -20,4 +20,20 @@ public class Camera {
         System.out.println("Default hash code: " + original);
         return -90;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null) {
+            System.out.println("Ref is not null");
+            if (obj instanceof Camera) {
+                System.out.println("Ref is Camera, will compare...");
+                Camera c1 = this;
+                Camera c2 = (Camera) obj;
+                if (c1.brand.equals(c2.brand)) {
+                    System.out.println("Both Cameras are same brand and resolution");
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
 }

@@ -20,4 +20,20 @@ public class ToothBrush {
         System.out.println("Default hash code: " + super.hashCode());
         return 979;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null) {
+            System.out.println("Ref is not null");
+            if (obj instanceof ToothBrush) {
+                System.out.println("Ref is ToothBrush, will compare...");
+                ToothBrush brush1 = this;
+                ToothBrush brush2 = (ToothBrush) obj;
+                if (brush1.shape.equals(brush2.shape) && brush1.handleGrip.equals(brush2.handleGrip) && brush1.brushHeadSize.equals(brush2.brushHeadSize)) {
+                    System.out.println("Both toothbrushes are identical");
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
 }

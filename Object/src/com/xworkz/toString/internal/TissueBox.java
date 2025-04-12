@@ -19,4 +19,20 @@ public class TissueBox {
         System.out.println("Default hash code: " + super.hashCode());
         return 36;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null) {
+            System.out.println("Ref is not null");
+            if (obj instanceof TissueBox) {
+                System.out.println("Ref is TissueBox, will compare...");
+                TissueBox box1 = this;
+                TissueBox box2 = (TissueBox) obj;
+                if (box1.brand.equals(box2.brand) && box1.sheetCount == box2.sheetCount && box1.material.equals(box2.material)) {
+                    System.out.println("Both tissue boxes are identical");
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
 }

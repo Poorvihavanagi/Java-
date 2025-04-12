@@ -19,4 +19,21 @@ public class Bucket {
         System.out.println("Default hash code: " + super.hashCode());
         return -60;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null) {
+            System.out.println("Ref is not null");
+            if (obj instanceof Bucket) {
+                System.out.println("Ref is Bucket, will compare...");
+                Bucket bucket1 = this;
+                Bucket bucket2 = (Bucket) obj;
+                if (bucket1.material.equals(bucket2.material)) {
+                    System.out.println("Both buckets are of the same material");
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
+
 }

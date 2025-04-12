@@ -21,4 +21,20 @@ public class Curtains {
         System.out.println("Default hash code: " + super.hashCode());
         return -180;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null) {
+            System.out.println("Ref is not null");
+            if (obj instanceof Curtains) {
+                System.out.println("Ref is Curtains, will compare...");
+                Curtains curtain1 = this;
+                Curtains curtain2 = (Curtains) obj;
+                if (curtain1.fabricType.equals(curtain2.fabricType)) {
+                    System.out.println("Both Curtains have the same fabric type");
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
 }

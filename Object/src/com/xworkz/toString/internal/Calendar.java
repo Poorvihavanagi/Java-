@@ -21,4 +21,20 @@ public class Calendar
         System.out.println("Original hash code  " + original);
         return -80;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null) {
+            System.out.println("Ref is not null");
+            if (obj instanceof Calendar) {
+                System.out.println("Ref is Calendar, will compare...");
+                Calendar c1 = this;
+                Calendar c2 = (Calendar) obj;
+                if (c1.year == c2.year ) {
+                    System.out.println("Both Calendars are same in year and type");
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
 }

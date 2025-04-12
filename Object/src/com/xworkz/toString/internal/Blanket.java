@@ -20,4 +20,20 @@ public class Blanket {
         System.out.println("Default hash code: " + super.hashCode());
         return -100;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null) {
+            System.out.println("Ref is not null");
+            if (obj instanceof Blanket) {
+                System.out.println("Ref is Blanket, will compare...");
+                Blanket blanket1 = this;
+                Blanket blanket2 = (Blanket) obj;
+                if (blanket1.color.equals(blanket2.color)) {
+                    System.out.println("Both blankets are the same color");
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
 }

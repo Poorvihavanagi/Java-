@@ -19,4 +19,20 @@ public class Table {
         System.out.println("Default hash code: " + super.hashCode());
         return 97;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null) {
+            System.out.println("Ref is not null");
+            if (obj instanceof Table) {
+                System.out.println("Ref is Table, will compare...");
+                Table table1 = this;
+                Table table2 = (Table) obj;
+                if (table1.shape.equals(table2.shape) && table1.material.equals(table2.material) && table1.height == table2.height) {
+                    System.out.println("Both tables are identical");
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
 }

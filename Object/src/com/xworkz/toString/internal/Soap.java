@@ -19,4 +19,22 @@ public class Soap {
         System.out.println("Default hash code: " + super.hashCode());
         return 55;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null) {
+            System.out.println("Ref is not null");
+            if (obj instanceof Soap) {
+                System.out.println("Ref is Soap, will compare...");
+                Soap soap1 = this;
+                Soap soap2 = (Soap) obj;
+                if (soap1.brand.equals(soap2.brand) &&
+                        soap1.scent.equals(soap2.scent) &&
+                        soap1.weight == soap2.weight) {
+                    System.out.println("Both soaps are identical");
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
 }

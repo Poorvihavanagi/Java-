@@ -20,4 +20,20 @@ public class NoteBook {
         System.out.println("Default hash code: " + super.hashCode());
         return -700;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null) {
+            System.out.println("Ref is not null");
+            if (obj instanceof NoteBook) {
+                System.out.println("Ref is NoteBook, will compare...");
+                NoteBook noteBook1 = this;
+                NoteBook noteBook2 = (NoteBook) obj;
+                if (noteBook1.brand.equals(noteBook2.brand) && noteBook1.type.equals(noteBook2.type)) {
+                    System.out.println("Both Notebooks are identical");
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
 }

@@ -9,5 +9,11 @@ public class ChappalRunner {
         int hash = chappal.hashCode();
         System.out.println("Hash Code: " + hash);
         System.out.println("Original Code: " + System.identityHashCode(chappal));
+
+        Chappal chappal2 = new Chappal("Bata", "9", "Leather");
+        System.out.println("Checking same location: " + (chappal == chappal2));
+        boolean same = chappal.equals(chappal2);
+        System.out.println("Chappal1 is same as Chappal2: " + same);
+
     }
 }

@@ -19,4 +19,20 @@ public class VacuumCleaner {
         System.out.println("Default hash code: " + super.hashCode());
         return 197;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null) {
+            System.out.println("Ref is not null");
+            if (obj instanceof VacuumCleaner) {
+                System.out.println("Ref is VacuumCleaner, will compare...");
+                VacuumCleaner vacuum1 = this;
+                VacuumCleaner vacuum2 = (VacuumCleaner) obj;
+                if (vacuum1.brand.equals(vacuum2.brand) && vacuum1.power == vacuum2.power && vacuum1.type.equals(vacuum2.type)) {
+                    System.out.println("Both VacuumCleaners are identical");
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
 }

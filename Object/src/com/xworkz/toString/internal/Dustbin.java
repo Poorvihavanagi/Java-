@@ -20,4 +20,20 @@ public class Dustbin {
         System.out.println("Default hash code: " + super.hashCode());
         return -220;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null) {
+            System.out.println("Ref is not null");
+            if (obj instanceof Dustbin) {
+                System.out.println("Ref is Dustbin, will compare...");
+                Dustbin db1 = this;
+                Dustbin db2 = (Dustbin) obj;
+                if (db1.color.equals(db2.color)) {
+                    System.out.println("Both Dustbins have the same color.");
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
 }

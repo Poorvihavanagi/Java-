@@ -19,4 +19,20 @@ public class Television {
         System.out.println("Default hash code: " + super.hashCode());
         return 80;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null) {
+            System.out.println("Ref is not null");
+            if (obj instanceof Television) {
+                System.out.println("Ref is Television, will compare...");
+                Television tv1 = this;
+                Television tv2 = (Television) obj;
+                if (tv1.brand.equals(tv2.brand) && tv1.size == tv2.size && tv1.type.equals(tv2.type)) {
+                    System.out.println("Both televisions are identical");
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
 }

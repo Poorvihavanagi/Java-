@@ -10,5 +10,12 @@ public class NoteBookRunner {
         int hash = notebook.hashCode();
         System.out.println("Hash Code: " + hash);
         System.out.println("Original Code: " + System.identityHashCode(notebook));
+
+        NoteBook notebook1 = new NoteBook("Classmate", 180, "Ruled");
+        NoteBook notebook2 = new NoteBook("Camlin", 200, "Plain");
+
+        System.out.println("Checking same location: " + (notebook1 == notebook2));
+        boolean same = notebook1.equals(notebook2);
+        System.out.println("Notebook1 is same as Notebook2: " + same);
     }
 }

@@ -20,5 +20,20 @@ public class Pen {
         System.out.println("Default hash code: " + super.hashCode());
         return -720;
     }
-
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null) {
+            System.out.println("Ref is not null");
+            if (obj instanceof Pen) {
+                System.out.println("Ref is Pen, will compare...");
+                Pen pen1 = this;
+                Pen pen2 = (Pen) obj;
+                if (pen1.brand.equals(pen2.brand) && pen1.inkColor.equals(pen2.inkColor)) {
+                    System.out.println("Both Pens are identical");
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
 }

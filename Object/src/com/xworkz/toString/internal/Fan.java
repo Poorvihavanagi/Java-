@@ -20,5 +20,20 @@ public class Fan {
         System.out.println("Default hash code: " + super.hashCode());
         return -240;
     }
-
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null) {
+            System.out.println("Ref is not null");
+            if (obj instanceof Fan) {
+                System.out.println("Ref is Fan, will compare...");
+                Fan f1 = this;
+                Fan f2 = (Fan) obj;
+                if (f1.brand.equals(f2.brand)) {
+                    System.out.println("Both Fans have the same brand");
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
 }

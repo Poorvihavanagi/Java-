@@ -19,4 +19,20 @@ public class Torch {
         System.out.println("Default hash code: " + super.hashCode());
         return 197;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null) {
+            System.out.println("Ref is not null");
+            if (obj instanceof Torch) {
+                System.out.println("Ref is Torch, will compare...");
+                Torch torch1 = this;
+                Torch torch2 = (Torch) obj;
+                if (torch1.brand.equals(torch2.brand) && torch1.batteryType.equals(torch2.batteryType) && torch1.lightRange == torch2.lightRange) {
+                    System.out.println("Both torches are identical");
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
 }

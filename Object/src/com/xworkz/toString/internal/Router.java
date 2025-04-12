@@ -19,4 +19,22 @@ public class Router {
         System.out.println("Default hash code: " + super.hashCode());
         return 97;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null) {
+            System.out.println("Ref is not null");
+            if (obj instanceof Router) {
+                System.out.println("Ref is Router, will compare...");
+                Router router1 = this;
+                Router router2 = (Router) obj;
+                if (router1.brand.equals(router2.brand) &&
+                        router1.frequencyBand.equals(router2.frequencyBand) &&
+                        router1.numberOfPorts == router2.numberOfPorts) {
+                    System.out.println("Both routers are identical");
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
 }

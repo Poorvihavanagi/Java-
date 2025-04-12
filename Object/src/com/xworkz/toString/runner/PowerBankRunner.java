@@ -10,5 +10,12 @@ public class PowerBankRunner {
         int hash = pb.hashCode();
         System.out.println("Hash Code: " + hash);
         System.out.println("Original Code: " + System.identityHashCode(pb));
+
+        PowerBank pb1 = new PowerBank("Realme", 20000, 3);
+        PowerBank pb2 = new PowerBank("Realme", 20000, 2);
+
+        System.out.println("Checking same location: " + (pb1 == pb2));
+        boolean same = pb1.equals(pb2);
+        System.out.println("PowerBank1 is same as PowerBank2: " + same);
     }
 }

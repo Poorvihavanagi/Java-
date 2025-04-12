@@ -21,4 +21,20 @@ public class Clothing {
         System.out.println("Default hash code: " + super.hashCode());
         return -140;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null) {
+            System.out.println("Ref is not null");
+            if (obj instanceof Clothing) {
+                System.out.println("Ref is Clothing, will compare...");
+                Clothing c1 = this;
+                Clothing c2 = (Clothing) obj;
+                if (c1.brand.equals(c2.brand)) {
+                    System.out.println("Both Clothing items have the same brand");
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
 }

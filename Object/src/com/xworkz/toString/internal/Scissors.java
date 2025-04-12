@@ -19,4 +19,22 @@ public class Scissors {
         System.out.println("Default hash code: " + super.hashCode());
         return 69;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null) {
+            System.out.println("Ref is not null");
+            if (obj instanceof Scissors) {
+                System.out.println("Ref is Scissors, will compare...");
+                Scissors scissor1 = this;
+                Scissors scissor2 = (Scissors) obj;
+                if (scissor1.brand.equals(scissor2.brand) &&
+                        scissor1.type.equals(scissor2.type) &&
+                        scissor1.length == scissor2.length) {
+                    System.out.println("Both scissors are identical");
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
 }

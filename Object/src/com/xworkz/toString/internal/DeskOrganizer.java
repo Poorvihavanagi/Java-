@@ -19,4 +19,20 @@ public class DeskOrganizer {
         System.out.println("Default hash code: " + super.hashCode());
         return -200;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null) {
+            System.out.println("Ref is not null");
+            if (obj instanceof DeskOrganizer) {
+                System.out.println("Ref is DeskOrganizer, will compare...");
+                DeskOrganizer organizer1 = this;
+                DeskOrganizer organizer2 = (DeskOrganizer) obj;
+                if (organizer1.type.equals(organizer2.type)) {
+                    System.out.println("Both DeskOrganizers have the same type");
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
 }

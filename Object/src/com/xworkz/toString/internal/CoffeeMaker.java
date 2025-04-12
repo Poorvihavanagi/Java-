@@ -21,4 +21,21 @@ public class CoffeeMaker {
         System.out.println("Default hash code: " + super.hashCode());
         return -150;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null) {
+            System.out.println("Ref is not null");
+            if (obj instanceof CoffeeMaker) {
+                System.out.println("Ref is CoffeeMaker, will compare...");
+                CoffeeMaker cm1 = this;
+                CoffeeMaker cm2 = (CoffeeMaker) obj;
+                if (cm1.brand.equals(cm2.brand)) {
+                    System.out.println("Both CoffeeMakers have the same brand");
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
+
 }

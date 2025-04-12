@@ -19,4 +19,20 @@ public class Wallet {
         System.out.println("Default hash code: " + super.hashCode());
         return 957;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null) {
+            System.out.println("Ref is not null");
+            if (obj instanceof Wallet) {
+                System.out.println("Ref is Wallet, will compare...");
+                Wallet wallet1 = this;
+                Wallet wallet2 = (Wallet) obj;
+                if (wallet1.material.equals(wallet2.material) && wallet1.color.equals(wallet2.color) && wallet1.slots == wallet2.slots) {
+                    System.out.println("Both Wallets are identical");
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
 }

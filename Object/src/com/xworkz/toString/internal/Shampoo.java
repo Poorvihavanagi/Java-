@@ -19,4 +19,20 @@ public class Shampoo {
         System.out.println("Default hash code: " + super.hashCode());
         return 97;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null) {
+            System.out.println("Ref is not null");
+            if (obj instanceof Shampoo) {
+                System.out.println("Ref is Shampoo, will compare...");
+                Shampoo shampoo1 = this;
+                Shampoo shampoo2 = (Shampoo) obj;
+                if (shampoo1.brand.equals(shampoo2.brand) && shampoo1.type.equals(shampoo2.type) && shampoo1.volume == shampoo2.volume) {
+                    System.out.println("Both shampoos are identical");
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
 }

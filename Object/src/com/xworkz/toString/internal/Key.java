@@ -20,4 +20,21 @@ public class Key {
         System.out.println("Default hash code: " + super.hashCode());
         return 500;
     }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null) {
+            System.out.println("Ref is not null");
+            if (obj instanceof Key) {
+                System.out.println("Ref is Key, will compare...");
+                Key key1 = this;
+                Key key2 = (Key) obj;
+                if (key1.shapeCode.equals(key2.shapeCode) && key1.engraving.equals(key2.engraving) ) {
+                    System.out.println("Both Keys are identical");
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
 }

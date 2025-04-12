@@ -10,5 +10,12 @@ public class IronBoxRunner {
         int hash = ironBox.hashCode();
         System.out.println("Hash Code: " + hash);
         System.out.println("Original Code: " + System.identityHashCode(ironBox));
+
+        IronBox ironBox1 = new IronBox("Bajaj", 1000, "White");
+        IronBox ironBox2 = new IronBox("Philips", 1200, "Black");
+
+        System.out.println("Checking same location: " + (ironBox1 == ironBox2));
+        boolean same = ironBox1.equals(ironBox2);
+        System.out.println("IronBox1 is same as IronBox2: " + same);
     }
 }

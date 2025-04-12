@@ -11,6 +11,13 @@ public class HelmetRunner {
             int hash = helmet.hashCode();
             System.out.println("Hash Code: " + hash);
             System.out.println("Original Code: " + System.identityHashCode(helmet));
+
+            Helmet helmet1 = new Helmet("Vega", "M", "Black");
+            Helmet helmet2 = new Helmet("Royal Enfield", "L", "Red");
+
+            System.out.println("Checking same location: " + (helmet1 == helmet2));
+            boolean same = helmet1.equals(helmet2);
+            System.out.println("Helmet1 is same as Helmet2: " + same);
         }
 
 }

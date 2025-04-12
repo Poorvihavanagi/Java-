@@ -19,4 +19,21 @@ public class Chappal {
         System.out.println("Default hash code: " + super.hashCode());
         return -110;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null) {
+            System.out.println("Ref is not null");
+            if (obj instanceof Chappal) {
+                System.out.println("Ref is Chappal, will compare...");
+                Chappal ch1 = this;
+                Chappal ch2 = (Chappal) obj;
+                if (ch1.brand.equals(ch2.brand)) {
+                    System.out.println("Both Chappals have the same brand");
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
+
 }

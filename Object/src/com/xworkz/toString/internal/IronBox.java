@@ -20,4 +20,21 @@ public class IronBox {
         System.out.println("Default hash code: " + super.hashCode());
         return -340;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null) {
+            System.out.println("Ref is not null");
+            if (obj instanceof IronBox) {
+                System.out.println("Ref is IronBox, will compare...");
+                IronBox ironBox1 = this;
+                IronBox ironBox2 = (IronBox) obj;
+                if (ironBox1.brand.equals(ironBox2.brand) && ironBox1.wattage == ironBox2.wattage ) {
+                    System.out.println("Both IronBoxes have the same brand, wattage, and color");
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
+
 }

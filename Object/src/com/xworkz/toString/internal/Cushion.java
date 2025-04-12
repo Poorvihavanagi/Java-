@@ -21,4 +21,21 @@ public class Cushion {
         System.out.println("Default hash code: " + super.hashCode());
         return -190;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null) {
+            System.out.println("Ref is not null");
+            if (obj instanceof Cushion) {
+                System.out.println("Ref is Cushion, will compare...");
+                Cushion cushion1 = this;
+                Cushion cushion2 = (Cushion) obj;
+                if (cushion1.color.equals(cushion2.color)) {
+                    System.out.println("Both Cushions have the same color");
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
+
 }

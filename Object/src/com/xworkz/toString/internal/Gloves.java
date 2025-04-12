@@ -19,4 +19,20 @@ public class Gloves {
         System.out.println("Default hash code: " + super.hashCode());
         return -280;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null) {
+            System.out.println("Ref is not null");
+            if (obj instanceof Gloves) {
+                System.out.println("Ref is Gloves, will compare...");
+                Gloves gloves1 = this;
+                Gloves gloves2 = (Gloves) obj;
+                if (gloves1.material.equals(gloves1.material) && gloves2.size.equals(gloves1.size)) {
+                    System.out.println("Both Gloves have the same material");
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
 }

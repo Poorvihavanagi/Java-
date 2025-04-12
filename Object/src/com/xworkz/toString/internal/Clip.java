@@ -21,4 +21,22 @@ public class Clip {
         System.out.println("Default hash code: " + super.hashCode());
         return -130;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null) {
+            System.out.println("Ref is not null");
+            if (obj instanceof Clip) {
+                System.out.println("Ref is Clip, will compare...");
+                Clip c1 = this;
+                Clip c2 = (Clip) obj;
+                if (c1.type.equals(c2.type)) {
+                    System.out.println("Both Clips have the same type");
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
+
+
 }

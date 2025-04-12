@@ -19,4 +19,20 @@ public class ShoppingBag {
         System.out.println("Default hash code: " + super.hashCode());
         return 93;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null) {
+            System.out.println("Ref is not null");
+            if (obj instanceof ShoppingBag) {
+                System.out.println("Ref is ShoppingBag, will compare...");
+                ShoppingBag bag1 = this;
+                ShoppingBag bag2 = (ShoppingBag) obj;
+                if (bag1.material.equals(bag2.material) && bag1.color.equals(bag2.color) && bag1.capacity == bag2.capacity) {
+                    System.out.println("Both shopping bags are identical");
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
 }

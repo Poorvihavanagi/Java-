@@ -10,5 +10,12 @@ public class PhoneRunner {
         int hash = phone.hashCode();
         System.out.println("Hash Code: " + hash);
         System.out.println("Original Code: " + System.identityHashCode(phone));
+
+        Phone phone1 = new Phone("Apple", "iPhone 13", 128);
+        Phone phone2 = new Phone("Apple", "iPhone 13", 64);
+
+        System.out.println("Checking same location: " + (phone1 == phone2));
+        boolean same = phone1.equals(phone2);
+        System.out.println("Phone1 is same as Phone2: " + same);
     }
 }

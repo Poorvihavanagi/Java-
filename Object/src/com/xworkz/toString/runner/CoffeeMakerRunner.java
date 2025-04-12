@@ -10,5 +10,13 @@ public class CoffeeMakerRunner {
         int hash = coffeeMaker.hashCode();
         System.out.println("Hash Code: " + hash);
         System.out.println("Original Code: " + System.identityHashCode(coffeeMaker));
+
+        CoffeeMaker coffeeMaker1 = new CoffeeMaker("Nescafe", 5, "Espresso");
+        CoffeeMaker coffeeMaker2 = new CoffeeMaker("Nescafe", 6, "Americano");
+
+        System.out.println("Checking same location: " + (coffeeMaker1 == coffeeMaker2));
+        boolean same = coffeeMaker1.equals(coffeeMaker2);
+        System.out.println("CoffeeMaker1 is same as CoffeeMaker2: " + same);
+
     }
 }

@@ -20,4 +20,20 @@ public class Animal {
         System.out.println("Default code: " +super.hashCode());
         return 10;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null) {
+            System.out.println("Ref is not null");
+            if (obj instanceof Animal) {
+                System.out.println("Ref is Animal, will compare...");
+                Animal animal1 = this;
+                Animal animal2 = (Animal) obj;
+                if (animal1.name.equals(animal2.name)) {
+                    System.out.println("Both animals have the same name");
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
 }

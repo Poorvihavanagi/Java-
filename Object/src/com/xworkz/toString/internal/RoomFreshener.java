@@ -19,4 +19,22 @@ public class RoomFreshener {
         System.out.println("Default hash code: " + super.hashCode());
         return 960;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null) {
+            System.out.println("Ref is not null");
+            if (obj instanceof RoomFreshener) {
+                System.out.println("Ref is RoomFreshener, will compare...");
+                RoomFreshener freshener1 = this;
+                RoomFreshener freshener2 = (RoomFreshener) obj;
+                if (freshener1.brand.equals(freshener2.brand) &&
+                        freshener1.scent.equals(freshener2.scent) &&
+                        freshener1.volume == freshener2.volume) {
+                    System.out.println("Both room fresheners are identical");
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
 }

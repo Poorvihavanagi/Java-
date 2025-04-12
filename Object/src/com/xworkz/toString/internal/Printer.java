@@ -19,4 +19,20 @@ public class Printer {
         System.out.println("Default hash code: " + super.hashCode());
         return 256;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null) {
+            System.out.println("Ref is not null");
+            if (obj instanceof Printer) {
+                System.out.println("Ref is Printer, will compare...");
+                Printer p1 = this;
+                Printer p2 = (Printer) obj;
+                if (p1.brand.equals(p2.brand) && p1.printTechnology.equals(p2.printTechnology) && p1.pagesPerMinute == p2.pagesPerMinute) {
+                    System.out.println("Both Printers are identical");
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
 }

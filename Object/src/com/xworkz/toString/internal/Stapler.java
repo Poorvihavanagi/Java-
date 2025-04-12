@@ -19,4 +19,20 @@ public class Stapler {
         System.out.println("Default hash code: " + super.hashCode());
         return 39;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null) {
+            System.out.println("Ref is not null");
+            if (obj instanceof Stapler) {
+                System.out.println("Ref is Stapler, will compare...");
+                Stapler stapler1 = this;
+                Stapler stapler2 = (Stapler) obj;
+                if (stapler1.brand.equals(stapler2.brand) && stapler1.size.equals(stapler2.size) && stapler1.capacity == stapler2.capacity) {
+                    System.out.println("Both staplers are identical");
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
 }

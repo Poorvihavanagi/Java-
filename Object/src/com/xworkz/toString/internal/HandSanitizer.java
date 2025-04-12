@@ -19,4 +19,20 @@ public class HandSanitizer {
         System.out.println("Default hash code: " + super.hashCode());
         return -310;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null) {
+            System.out.println("Ref is not null");
+            if (obj instanceof HandSanitizer) {
+                System.out.println("Ref is HandSanitizer, will compare...");
+                HandSanitizer sanitizer1 = this;
+                HandSanitizer sanitizer2 = (HandSanitizer) obj;
+                if (sanitizer1.brand.equals(sanitizer2.brand) && sanitizer1.alcoholPercentage == sanitizer2.alcoholPercentage) {
+                    System.out.println("Both HandSanitizers have the same brand, alcohol percentage, and volume");
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
 }
