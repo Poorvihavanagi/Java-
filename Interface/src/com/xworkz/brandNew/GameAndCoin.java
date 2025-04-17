@@ -21,6 +21,21 @@ public class GameAndCoin implements Coin, Chessboard {
     }
 
     @Override
+    public void clean() {
+        System.out.println("Running clean");
+    }
+
+    @Override
+    public void inspect() {
+        System.out.println("Running inspect");
+    }
+
+    @Override
+    public void fold() {
+        System.out.println("Running fold");
+    }
+
+    @Override
     public void setUp() {
         System.out.println("Setting up the chessboard.");
     }

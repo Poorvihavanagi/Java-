@@ -1,4 +1,4 @@
-package com.xworkz.implement;
+package com.xworkz.brandNew;
 
 import com.xworkz.internal.Shop;
 import com.xworkz.internal.Shopping;
@@ -18,6 +18,21 @@ public class RetailStore implements Shop, Shopping {
     @Override
     public void closeShop() {
         System.out.println("Retail outlet is now closed.");
+    }
+
+    @Override
+    public void applyDiscount() {
+        System.out.println("Running applydiscount");
+    }
+
+    @Override
+    public void provideReceipt() {
+        Shopping.super.provideReceipt();
+    }
+
+    @Override
+    public void printReceipt() {
+        Shop.super.printReceipt();
     }
 
     @Override

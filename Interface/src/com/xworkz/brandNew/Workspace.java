@@ -21,6 +21,16 @@ public class Workspace implements DeskLamp, Cushion {
     }
 
     @Override
+    public void reset() {
+        System.out.println("Running reset in workspace");
+    }
+
+    @Override
+    public void store() {
+        System.out.println("Running store in workspace");
+    }
+
+    @Override
     public void place() {
         System.out.println("Placing the cushion on the chair.");
     }
@@ -33,5 +43,10 @@ public class Workspace implements DeskLamp, Cushion {
     @Override
     public void clean() {
         System.out.println("Cleaning the cushion with a damp cloth.");
+    }
+
+    @Override
+    public void refresh() {
+        System.out.println("Running refresh in workspace");
     }
 }
