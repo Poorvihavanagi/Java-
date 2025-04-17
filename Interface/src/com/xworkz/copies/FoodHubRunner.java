@@ -11,7 +11,7 @@ public class FoodHubRunner {
         bakery.displayItems();
         bakery.sellItem();
 
-        System.out.println("------------------------------");
+        System.out.println("--------------------------------");
 
         Food food = new FoodHub();
         food.prepare();
