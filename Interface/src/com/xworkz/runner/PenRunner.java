@@ -9,5 +9,7 @@ public class PenRunner {
         pen.write();
         pen.refill();
         pen.click();
+        pen.checkInkLevel();
+        pen.displayBrand();
     }
 }

@@ -14,4 +14,14 @@ public class WoodenDoor implements Door {
     public void lock() {
         System.out.println("Locking the wooden door.");
     }
+    @Override
+    public void paint() {
+        System.out.println("Painting the wooden door.");
+    }
+
+    @Override
+    public void clean() {
+        System.out.println("Cleaning the wooden door.");
+    }
+
 }

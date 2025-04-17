@@ -12,4 +12,14 @@ public class OfficeChair implements Chair {
     public void rotate() {
         System.out.println("Rotating the chair.");
     }
+
+    @Override
+    public void clean() {
+        System.out.println("Cleaning the office chair with a cloth.");
+    }
+
+    @Override
+    public void fold() {
+        System.out.println("Folding the office chair for storage.");
+    }
 }

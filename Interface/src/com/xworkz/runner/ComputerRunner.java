@@ -9,5 +9,7 @@ public class ComputerRunner {
         computer.boot();
         computer.runProgram();
         computer.shutDown();
+        computer.restart();
+        computer.displayInfo();
     }
 }

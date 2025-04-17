@@ -14,4 +14,14 @@ public class HerbalShampoo implements Shampoo {
     public void store() {
         System.out.println("Storing the herbal shampoo bottle in the bathroom.");
     }
+
+    @Override
+    public void checkExpiry() {
+        System.out.println("Checking the expiry date of herbal shampoo.");
+    }
+
+    @Override
+    public void shake() {
+        System.out.println("Shaking the herbal shampoo bottle before use.");
+    }
 }

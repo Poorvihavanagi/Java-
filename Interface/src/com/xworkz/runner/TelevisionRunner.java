@@ -9,5 +9,8 @@ public class TelevisionRunner {
         television.switchOn();
         television.switchOff();
         television.changeChannel();
+
+        television.adjustVolume();
+        television.mute();
     }
 }

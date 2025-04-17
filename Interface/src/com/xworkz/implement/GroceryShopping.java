@@ -14,4 +14,13 @@ public class GroceryShopping implements Shopping {
     public void checkout() {
         System.out.println("Checking out and leaving the store.");
     }
+    @Override
+    public void applyDiscount() {
+        System.out.println("Applying discount for grocery shopping.");
+    }
+
+    @Override
+    public void provideReceipt() {
+        System.out.println("Providing grocery shopping receipt.");
+    }
 }

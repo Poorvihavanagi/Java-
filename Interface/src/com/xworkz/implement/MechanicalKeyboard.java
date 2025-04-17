@@ -14,4 +14,8 @@ public class MechanicalKeyboard implements Keyboard {
     public void disconnect() {
         System.out.println("Keyboard disconnected.");
     }
+    @Override
+    public void changeLayout() {
+        System.out.println("Changing the wireless keyboard layout.");
+    }
 }

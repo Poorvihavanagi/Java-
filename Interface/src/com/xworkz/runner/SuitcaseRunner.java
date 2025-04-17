@@ -9,5 +9,8 @@ public class SuitcaseRunner {
         suitcase.packItems();
         suitcase.roll();
         suitcase.openSuitcase();
+
+        suitcase.lockSuitcase();
+        suitcase.unlockSuitcase();
     }
 }

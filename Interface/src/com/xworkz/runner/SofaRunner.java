@@ -9,5 +9,6 @@ public class SofaRunner {
         sofa.sit();
         sofa.fold();
         sofa.move();
+        sofa.clean();
     }
 }

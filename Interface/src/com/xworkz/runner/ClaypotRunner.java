@@ -9,5 +9,7 @@ public class ClaypotRunner {
         claypot.heatUp();
         claypot.cook();
         claypot.coolDown();
+        claypot.clean();
+        claypot.store();
     }
 }

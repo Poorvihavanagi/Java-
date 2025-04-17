@@ -14,4 +14,13 @@ public class MonsoonUmbrella implements Umbrella {
     public void protectFromRain() {
         System.out.println("Umbrella is protecting from rain.");
     }
+    @Override
+    public void store() {
+        System.out.println("Storing the monsoon umbrella carefully.");
+    }
+
+    @Override
+    public void dry() {
+        System.out.println("Drying the monsoon umbrella.");
+    }
 }

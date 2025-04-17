@@ -9,5 +9,7 @@ public class SoilRunner {
         soil.absorbWater();
         soil.supportPlant();
         soil.provideNutrients();
+
+        soil.enrichSoil();
     }
 }

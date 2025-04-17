@@ -14,4 +14,14 @@ public class CurrencyCoin implements Coin {
     public void exchange() {
         System.out.println("Exchanging the coin for goods or services.");
     }
+
+    @Override
+    public void clean() {
+        System.out.println("Cleaning the currency coin to remove dirt and grime.");
+    }
+
+    @Override
+    public void inspect() {
+        System.out.println("Inspecting the currency coin for any damage or defects.");
+    }
 }

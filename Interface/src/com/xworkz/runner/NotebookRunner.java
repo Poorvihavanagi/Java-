@@ -9,5 +9,8 @@ public class NotebookRunner {
         notebook.write();
         notebook.flipPages();
         notebook.tearPage();
+
+        notebook.checkPageCount();
+        notebook.displayCoverMaterial();
     }
 }

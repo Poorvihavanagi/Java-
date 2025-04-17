@@ -14,4 +14,9 @@ public class JavaInstitute implements Xworkz {
     public void buildCareers() {
         System.out.println("Helping students build strong IT careers.");
     }
+    @Override
+    public void giveCertificates() {
+        System.out.println("Giving Java completion certificates.");
+    }
 }
+

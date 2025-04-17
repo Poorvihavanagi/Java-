@@ -14,5 +14,8 @@ public class WoodenSofa implements Sofa {
     public void move() {
         System.out.println("Moving the wooden sofa.");
     }
-
+    @Override
+    public void clean() {
+        System.out.println("Cleaning the wooden sofa with a wood polish.");
+    }
 }

@@ -14,4 +14,8 @@ public class Rose implements Flower {
     public void attractBees() {
         System.out.println("Rose is attracting bees.");
     }
+    @Override
+    public void displayColor() {
+        System.out.println("The rose is red.");
+    }
 }

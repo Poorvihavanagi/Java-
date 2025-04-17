@@ -12,4 +12,13 @@ public class RunningShoe implements Shoe {
     public void remove() {
         System.out.println("Removing the shoes.");
     }
+    @Override
+    public void clean() {
+        System.out.println("Cleaning the running shoes.");
+    }
+
+    @Override
+    public void polish() {
+        System.out.println("Polishing the running shoes.");
+    }
 }

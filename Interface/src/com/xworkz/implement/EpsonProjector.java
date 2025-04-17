@@ -14,4 +14,13 @@ public class EpsonProjector implements Projector {
     public void turnOff() {
         System.out.println("Projector turned off.");
     }
+    @Override
+    public void adjustBrightness() {
+        System.out.println("Adjusting brightness for the LED projector.");
+    }
+
+    @Override
+    public void adjustVolume() {
+        System.out.println("Adjusting sound volume for the LED projector.");
+    }
 }

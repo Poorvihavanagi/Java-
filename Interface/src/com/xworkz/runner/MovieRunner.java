@@ -9,5 +9,7 @@ public class MovieRunner {
         movie.play();
         movie.pause();
         movie.stop();
+        movie.rewind();
+        movie.forward();
     }
 }

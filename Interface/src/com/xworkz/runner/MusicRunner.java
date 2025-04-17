@@ -9,5 +9,7 @@ public class MusicRunner {
         music.play();
         music.pause();
         music.stop();
+        music.shuffle();
+        music.repeat();
     }
 }

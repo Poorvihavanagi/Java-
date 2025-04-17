@@ -9,5 +9,6 @@ public class FlowerRunner {
         flower.bloom();
         flower.smell();
         flower.attractBees();
+        flower.displayColor();
     }
 }

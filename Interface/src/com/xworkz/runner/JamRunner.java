@@ -9,5 +9,6 @@ public class JamRunner {
         jam.spread();
         jam.taste();
         jam.store();
+        jam.checkExpiry();
     }
 }

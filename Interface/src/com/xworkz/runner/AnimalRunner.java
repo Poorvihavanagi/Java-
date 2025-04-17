@@ -9,5 +9,8 @@ public class AnimalRunner {
         animal.sound();
         animal.eat();
         animal.sleep();
+
+        animal.walk();
+        animal.run();
     }
 }

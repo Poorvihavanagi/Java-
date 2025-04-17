@@ -9,5 +9,7 @@ public class BicycleRunner {
         bicycle.pedal();
         bicycle.brake();
         bicycle.changeGear();
+        bicycle.ringBell();
+        bicycle.turnLightsOn();
     }
 }

@@ -14,4 +14,13 @@ public class Himalaya implements Mountain {
     public void attractClimbers() {
         System.out.println("Himalayas attract mountain climbers worldwide.");
     }
+    @Override
+    public void provideFreshAir() {
+        System.out.println("Everest offers pure, crisp air at its summit.");
+    }
+
+    @Override
+    public void offerAdventure() {
+        System.out.println("Climbers experience ultimate adventure while scaling Everest.");
+    }
 }

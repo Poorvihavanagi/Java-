@@ -9,5 +9,8 @@ public class CampfireRunner {
         campfire.ignite();
         campfire.maintainFire();
         campfire.extinguish();
+
+        campfire.gatherWood();
+        campfire.lightTorch();
     }
 }

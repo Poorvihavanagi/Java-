@@ -9,5 +9,8 @@ public class BackpackRunner {
         backpack.openZip();
         backpack.storeItems();
         backpack.carry();
+
+        backpack.clean();
+        backpack.adjustStraps();
     }
 }

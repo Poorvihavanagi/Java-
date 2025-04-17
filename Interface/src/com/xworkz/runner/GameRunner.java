@@ -9,5 +9,6 @@ public class GameRunner {
         game.start();
         game.play();
         game.end();
+        game.pause();
     }
 }

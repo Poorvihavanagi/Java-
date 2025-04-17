@@ -9,5 +9,6 @@ public class GlassRunner {
         glass.fill();
         glass.drink();
         glass.clean();
+        glass.dispose();
     }
 }

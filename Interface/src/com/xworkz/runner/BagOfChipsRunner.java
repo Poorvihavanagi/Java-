@@ -9,5 +9,8 @@ public class BagOfChipsRunner {
         chips.openBag();
         chips.eatChips();
         chips.closeBag();
+
+        chips.shakeBag();
+        chips.resealBag();
     }
 }

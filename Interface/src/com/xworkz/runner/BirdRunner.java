@@ -9,5 +9,11 @@ public class BirdRunner {
         bird.fly();
         bird.sing();
         bird.eat();
+
+
+        bird.chirp();
+        bird.buildNest();
+
+
     }
 }

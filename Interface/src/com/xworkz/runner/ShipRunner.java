@@ -9,5 +9,7 @@ public class ShipRunner {
         ship.sail();
         ship.loadCargo();
         ship.dock();
+        ship.checkEngine();
+        ship.soundHorn();
     }
 }

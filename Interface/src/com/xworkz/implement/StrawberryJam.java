@@ -14,4 +14,8 @@ public class StrawberryJam implements Jam {
     public void store() {
         System.out.println("Storing the strawberry jam in the fridge.");
     }
+    @Override
+    public void checkExpiry() {
+        System.out.println("Checking the expiry date of the strawberry jam.");
+    }
 }

@@ -9,5 +9,8 @@ public class BankRunner {
         bank.deposit();
         bank.withdraw();
         bank.checkBalance();
+
+        bank.printAccountStatement();
+        bank.transferFunds();
     }
 }

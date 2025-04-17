@@ -14,4 +14,13 @@ public class WoodenCampfire implements Campfire {
     public void extinguish() {
         System.out.println("Extinguishing the wooden campfire.");
     }
+    @Override
+    public void gatherWood() {
+        System.out.println("Gathering dry wood for the wooden campfire.");
+    }
+
+    @Override
+    public void lightTorch() {
+        System.out.println("Lighting a torch beside the campfire.");
+    }
 }

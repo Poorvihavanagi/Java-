@@ -9,5 +9,8 @@ public class DroneRunner {
         drone.takeOff();
         drone.fly();
         drone.land();
+
+        drone.charge();
+        drone.hover();
     }
 }

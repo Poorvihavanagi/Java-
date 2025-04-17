@@ -14,4 +14,13 @@ public class DailyNewspaper implements Newspaper {
     public void discard() {
         System.out.println("Discarding the old newspaper.");
     }
+    @Override
+    public void getEdition() {
+        System.out.println("Getting today's edition of the newspaper.");
+    }
+
+    @Override
+    public void checkSubscriptionStatus() {
+        System.out.println("Checking subscription status for the daily newspaper.");
+    }
 }

@@ -14,4 +14,9 @@ public class ClothesIron implements Iron {
     public void coolDown() {
         System.out.println("Cooling down the clothes iron.");
     }
+    @Override
+    public void checkTemperature() {
+        System.out.println("Checking the temperature of the steam iron.");
+    }
+
 }

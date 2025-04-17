@@ -14,4 +14,13 @@ public class SpiralNotebook implements Notebook {
     public void tearPage() {
         System.out.println("Tearing a page from the spiral notebook.");
     }
+    @Override
+    public void checkPageCount() {
+        System.out.println("Checking the page count in the spiral notebook.");
+    }
+
+    @Override
+    public void displayCoverMaterial() {
+        System.out.println("The cover of this spiral notebook is made of cardboard.");
+    }
 }

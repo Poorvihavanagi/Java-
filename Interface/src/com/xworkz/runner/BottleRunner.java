@@ -9,5 +9,7 @@ public class BottleRunner {
         bottle.fill();;
         bottle.drink();
         bottle.empty();
+        bottle.clean();
+        bottle.store();
     }
 }

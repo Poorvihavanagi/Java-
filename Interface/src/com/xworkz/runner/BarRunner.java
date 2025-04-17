@@ -9,5 +9,8 @@ public class BarRunner {
         bar.serveDrink();
         bar.playMusic();
         bar.closeBar();
+
+        bar.provideSnacks();
+        bar.offerDiscounts();
     }
 }

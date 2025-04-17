@@ -9,5 +9,8 @@ public class ShoeRunner {
         shoe.wear();
         shoe.tieLaces();
         shoe.remove();
+
+        shoe.clean();
+        shoe.polish();
     }
 }

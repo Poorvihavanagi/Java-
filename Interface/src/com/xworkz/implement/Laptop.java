@@ -15,4 +15,13 @@ public class Laptop implements Computer {
     public void runProgram() {
         System.out.println("Running a program on laptop.");
     }
+    @Override
+    public void restart() {
+        System.out.println("Restarting the laptop.");
+    }
+
+    @Override
+    public void displayInfo() {
+        System.out.println("Displaying laptop information.");
+    }
 }

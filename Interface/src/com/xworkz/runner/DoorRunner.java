@@ -9,5 +9,8 @@ public class DoorRunner {
         door.open();
         door.close();
         door.lock();
+
+        door.paint();
+        door.clean();
     }
 }

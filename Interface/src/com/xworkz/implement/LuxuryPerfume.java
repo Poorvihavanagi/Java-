@@ -14,4 +14,14 @@ public class LuxuryPerfume implements Perfume {
     public void giveFragrance() {
         System.out.println("Luxury perfume gives a pleasant fragrance.");
     }
+
+    @Override
+    public void checkExpiry() {
+        System.out.println("Checking the expiry date of the floral perfume.");
+    }
+
+    @Override
+    public void displayBrand() {
+        System.out.println("This is a brand-name floral perfume.");
+    }
 }

@@ -9,5 +9,8 @@ public class ChessboardRunner {
         chessboard.setUp();
         chessboard.play();
         chessboard.store();
+
+        chessboard.clean();
+        chessboard.fold();
     }
 }

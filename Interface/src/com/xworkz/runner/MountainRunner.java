@@ -9,5 +9,7 @@ public class MountainRunner {
         mountain.provideScenery();
         mountain.supportWildlife();
         mountain.attractClimbers();
+        mountain.provideFreshAir();
+        mountain.offerAdventure();
     }
 }

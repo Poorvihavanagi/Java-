@@ -14,4 +14,13 @@ public class GraniteStone implements Stone {
     public void useInConstruction() {
         System.out.println("Using granite stone in construction for flooring and countertops.");
     }
+    @Override
+    public void maintain() {
+        System.out.println("Maintaining the granite stone with regular cleaning and care.");
+    }
+
+    @Override
+    public void recycle() {
+        System.out.println("Recycling granite stone for reuse in landscaping.");
+    }
 }

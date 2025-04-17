@@ -14,4 +14,8 @@ public class DrinkingGlass implements Glass {
     public void clean() {
         System.out.println("Cleaning the drinking glass after use.");
     }
+    @Override
+    public void dispose() {
+        System.out.println("Disposing of the drinking glass properly.");
+    }
 }

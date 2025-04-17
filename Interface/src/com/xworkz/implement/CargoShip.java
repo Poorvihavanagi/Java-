@@ -14,4 +14,13 @@ public class CargoShip implements Ship {
     public void dock() {
         System.out.println("The cargo ship is docking at the port.");
     }
+    @Override
+    public void checkEngine() {
+        System.out.println("Performing engine check for the cargo ship.");
+    }
+
+    @Override
+    public void soundHorn() {
+        System.out.println("Cargo ship horn is sounded.");
+    }
 }

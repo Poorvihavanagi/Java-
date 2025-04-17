@@ -9,6 +9,9 @@ public class ArtRunner {
         art.create();
         art.describeStyle();
         art.display();
+
+        art.frame();
+        art.preserve();
     }
 
 }

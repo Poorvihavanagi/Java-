@@ -9,5 +9,7 @@ public class MugRunner {
         mug.fill();
         mug.drink();
         mug.clean();
+        mug.heat();
+        mug.cool();
     }
 }

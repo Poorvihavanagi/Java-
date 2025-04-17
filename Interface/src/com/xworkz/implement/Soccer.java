@@ -16,4 +16,8 @@ public class Soccer implements Game {
     public void end(){
         System.out.println("Running end game in soccer ");
     }
+    @Override
+    public void pause() {
+        System.out.println("Pausing the soccer game.");
+    }
 }

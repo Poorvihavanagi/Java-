@@ -9,5 +9,7 @@ public class UmbrellaRunner {
         umbrella.open();
         umbrella.close();
         umbrella.protectFromRain();
+        umbrella.store();
+        umbrella.dry();
     }
 }

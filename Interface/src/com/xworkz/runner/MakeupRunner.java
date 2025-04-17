@@ -9,5 +9,6 @@ public class MakeupRunner {
         makeup.apply();
         makeup.remove();
         makeup.store();
+        makeup.setExpirationDate();
     }
 }

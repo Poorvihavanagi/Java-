@@ -9,5 +9,8 @@ public class FanRunner {
         fan.turnOn();
         fan.turnOff();
         fan.changeSpeed();
+
+        fan.oscillate();
+        fan.displayStatus();
     }
 }

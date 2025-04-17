@@ -14,4 +14,8 @@ public class Lipstick implements Makeup {
     public void store() {
         System.out.println("Storing the lipstick in the makeup bag.");
     }
+    @Override
+    public void setExpirationDate() {
+        System.out.println("Setting the expiration date for the lipstick.");
+    }
 }

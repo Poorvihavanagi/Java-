@@ -9,5 +9,8 @@ public class BakeryRunner {
         bakery.bakeItem();
         bakery.displayItems();
         bakery.sellItem();
+
+        bakery.offerDiscount();
+        bakery.advertise();
     }
 }

@@ -9,5 +9,6 @@ public class MirrorRunner {
         mirror.reflect();
         mirror.clean();
         mirror.hangOnWall();
+        mirror.polish();
     }
 }

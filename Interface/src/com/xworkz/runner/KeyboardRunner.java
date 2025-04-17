@@ -9,5 +9,6 @@ public class KeyboardRunner {
         keyboard.type();
         keyboard.connect();
         keyboard.disconnect();
+        keyboard.changeLayout();
     }
 }

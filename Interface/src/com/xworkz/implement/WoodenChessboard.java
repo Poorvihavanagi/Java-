@@ -14,4 +14,13 @@ public class WoodenChessboard implements Chessboard {
     public void store() {
         System.out.println("Storing the wooden chessboard after use.");
     }
+    @Override
+    public void clean() {
+        System.out.println("Cleaning the wooden chessboard with a cloth.");
+    }
+
+    @Override
+    public void fold() {
+        System.out.println("Folding the wooden chessboard for easy storage.");
+    }
 }

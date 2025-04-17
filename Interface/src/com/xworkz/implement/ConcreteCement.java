@@ -14,4 +14,13 @@ public class ConcreteCement implements Cement {
     public void dry() {
         System.out.println("Allowing the cement to dry and set.");
     }
+    @Override
+    public void setTimer() {
+        System.out.println("Setting timer for the concrete to dry.");
+    }
+
+    @Override
+    public void checkConsistency() {
+        System.out.println("Checking the consistency of the concrete mixture.");
+    }
 }

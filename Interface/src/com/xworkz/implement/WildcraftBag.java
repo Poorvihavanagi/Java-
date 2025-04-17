@@ -12,4 +12,13 @@ public class WildcraftBag implements Backpack {
     public void carry() {
         System.out.println("Carrying backpack.");
     }
+    @Override
+    public void clean() {
+        System.out.println("Cleaning the Wildcraft backpack.");
+    }
+
+    @Override
+    public void adjustStraps() {
+        System.out.println("Adjusting the straps of the Wildcraft backpack.");
+    }
 }

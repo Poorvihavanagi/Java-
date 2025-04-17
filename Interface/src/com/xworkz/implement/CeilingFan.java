@@ -13,4 +13,13 @@ public class CeilingFan implements Fan{
     public void changeSpeed() {
         System.out.println("Fan speed changed.");
     }
+    @Override
+    public void oscillate() {
+        System.out.println("Ceiling fan is oscillating.");
+    }
+
+    @Override
+    public void displayStatus() {
+        System.out.println("Ceiling fan is operational.");
+    }
 }

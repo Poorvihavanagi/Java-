@@ -9,5 +9,6 @@ public class CameraRunner {
         camera.takePhoto();
         camera.recordVideo();
         camera.zoom();
+        camera.displayResolution();
     }
 }

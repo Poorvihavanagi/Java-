@@ -9,5 +9,8 @@ public class BedRunner {
         bed.makeBed();
         bed.sleep();
         bed.cleanBed();
+
+        bed.adjustHeadrest();
+        bed.setBedsideLamp();
     }
 }

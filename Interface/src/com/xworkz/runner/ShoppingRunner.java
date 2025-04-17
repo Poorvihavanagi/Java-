@@ -9,5 +9,7 @@ public class ShoppingRunner {
         shopping.addItem();
         shopping.pay();
         shopping.checkout();
+        shopping.applyDiscount();
+        shopping.provideReceipt();
     }
 }

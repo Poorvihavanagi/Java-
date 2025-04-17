@@ -14,4 +14,13 @@ public class PaperTissue implements Tissue {
     public void store() {
         System.out.println("Storing the tissue in a box.");
     }
+    @Override
+    public void pack() {
+        System.out.println("Packing the paper tissue in a box.");
+    }
+
+    @Override
+    public void recycle() {
+        System.out.println("Recycling the used paper tissue.");
+    }
 }

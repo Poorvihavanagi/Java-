@@ -14,4 +14,8 @@ public class Apple implements Fruit {
     public void store() {
         System.out.println("Storing the apple in a cool place.");
     }
+    @Override
+    public void dispose() {
+        System.out.println("Disposing of the apple core.");
+    }
 }

@@ -9,5 +9,7 @@ public class CalendarRunner {
         calendar.showDate();
         calendar.showMonth();
         calendar.flipPage();
+
+        calendar.displayYear();
     }
 }

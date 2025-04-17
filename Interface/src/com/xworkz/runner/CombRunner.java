@@ -9,5 +9,8 @@ public class CombRunner {
         comb.untangleHair();
         comb.cleanComb();
         comb.keepInDrawer();
+
+        comb.sanitize();
+        comb.display();
     }
 }

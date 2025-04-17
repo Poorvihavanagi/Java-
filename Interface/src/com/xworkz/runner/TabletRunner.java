@@ -9,5 +9,8 @@ public class TabletRunner {
         tablet.openApp();
         tablet.swipe();
         tablet.closeApp();
+
+        tablet.restart();
+        tablet.lockScreen();
     }
 }

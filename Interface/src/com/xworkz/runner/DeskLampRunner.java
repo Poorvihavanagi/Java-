@@ -9,5 +9,8 @@ public class DeskLampRunner {
         deskLamp.turnOn();
         deskLamp.adjustBrightness();
         deskLamp.turnOff();
+
+        deskLamp.reset();
+        deskLamp.store();
     }
 }

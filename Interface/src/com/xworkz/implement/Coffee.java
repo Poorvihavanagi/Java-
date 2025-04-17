@@ -14,4 +14,13 @@ public class Coffee implements Beverage {
     public void drink() {
         System.out.println("Drinking the hot coffee.");
     }
+    @Override
+    public void addSugar() {
+        System.out.println("Adding sugar to the coffee.");
+    }
+
+    @Override
+    public void addMilk() {
+        System.out.println("Adding milk to the coffee.");
+    }
 }

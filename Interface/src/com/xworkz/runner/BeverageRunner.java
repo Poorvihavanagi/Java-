@@ -9,5 +9,8 @@ public class BeverageRunner {
         beverage.brew();
         beverage.pour();
         beverage.drink();
+
+        beverage.addSugar();
+        beverage.addMilk();
     }
 }

@@ -9,5 +9,7 @@ public class XworkzRunner {
         xworkz.conductTraining();
         xworkz.providePlacement();
         xworkz.buildCareers();
+
+        xworkz.giveCertificates();
     }
 }

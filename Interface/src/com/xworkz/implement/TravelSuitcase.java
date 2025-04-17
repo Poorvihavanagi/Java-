@@ -14,4 +14,13 @@ public class TravelSuitcase implements Suitcase {
     public void openSuitcase() {
         System.out.println("Opening the suitcase after arriving at destination.");
     }
+    @Override
+    public void lockSuitcase() {
+        System.out.println("Locking the travel suitcase.");
+    }
+
+    @Override
+    public void unlockSuitcase() {
+        System.out.println("Unlocking the travel suitcase.");
+    }
 }

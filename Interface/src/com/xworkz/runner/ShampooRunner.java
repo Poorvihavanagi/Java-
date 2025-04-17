@@ -9,5 +9,7 @@ public class ShampooRunner {
         shampoo.apply();
         shampoo.rinse();
         shampoo.store();
+        shampoo.checkExpiry();
+        shampoo.shake();
     }
 }

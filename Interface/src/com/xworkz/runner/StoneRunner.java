@@ -9,5 +9,8 @@ public class StoneRunner {
         stone.breakDown();
         stone.polish();
         stone.useInConstruction();
+
+        stone.maintain();
+        stone.recycle();
     }
 }

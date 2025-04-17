@@ -14,4 +14,13 @@ public class Parrot implements Bird {
     public void eat() {
         System.out.println("Parrot is eating fruits and seeds.");
     }
+    @Override
+    public void chirp() {
+        System.out.println("Parrot is chirping happily.");
+    }
+
+    @Override
+    public void buildNest() {
+        System.out.println("Parrot is building a nest with twigs and leaves.");
+    }
 }

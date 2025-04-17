@@ -9,5 +9,7 @@ public class NewspaperRunner {
         newspaper.read();
         newspaper.subscribe();
         newspaper.discard();
+        newspaper.getEdition();
+        newspaper.checkSubscriptionStatus();
     }
 }

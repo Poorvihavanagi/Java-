@@ -9,5 +9,6 @@ public class HospitalRunner {
         hospital.admitPatient();
         hospital.dischargePatient();
         hospital.treatPatient();
+        hospital.provideEmergencyCare();
     }
 }

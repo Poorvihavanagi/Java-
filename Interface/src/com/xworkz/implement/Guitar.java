@@ -15,4 +15,13 @@ public class Guitar implements Music {
     public void stop(){
         System.out.println("Running stop in guitar");
     }
+    @Override
+    public void shuffle() {
+        System.out.println("Shuffling the music tracks in MP3 player.");
+    }
+
+    @Override
+    public void repeat() {
+        System.out.println("Repeating the current song in MP3 player.");
+    }
 }

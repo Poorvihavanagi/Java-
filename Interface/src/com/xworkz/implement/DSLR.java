@@ -12,4 +12,8 @@ public class DSLR implements Camera {
     public void zoom() {
         System.out.println("Zooming in.");
     }
+    @Override
+    public void displayResolution() {
+        System.out.println("Overridden: Displaying high resolution for DSLR camera.");
+    }
 }

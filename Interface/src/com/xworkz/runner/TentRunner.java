@@ -9,5 +9,8 @@ public class TentRunner {
         tent.setUp();
         tent.occupy();
         tent.packUp();
+
+        tent.cleanUp();
+        tent.store();
     }
 }

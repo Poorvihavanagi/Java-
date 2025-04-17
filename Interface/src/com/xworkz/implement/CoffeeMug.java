@@ -14,4 +14,13 @@ public class CoffeeMug implements Mug {
     public void clean() {
         System.out.println("Cleaning the coffee mug.");
     }
+    @Override
+    public void heat() {
+        System.out.println("Heating the coffee in the coffee mug.");
+    }
+
+    @Override
+    public void cool() {
+        System.out.println("Cooling the coffee in the coffee mug.");
+    }
 }

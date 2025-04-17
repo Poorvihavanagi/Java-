@@ -9,5 +9,6 @@ public class IronRunner {
         iron.heatUp();
         iron.pressClothes();
         iron.coolDown();
+        iron.checkTemperature();
     }
 }

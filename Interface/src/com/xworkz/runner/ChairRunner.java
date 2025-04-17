@@ -9,5 +9,8 @@ public class ChairRunner {
         chair.sit();
         chair.adjustHeight();
         chair.rotate();
+
+        chair.clean();
+        chair.fold();
     }
 }

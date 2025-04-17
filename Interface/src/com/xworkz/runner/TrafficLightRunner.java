@@ -9,5 +9,8 @@ public class TrafficLightRunner {
         trafficLight.turnRed();
         trafficLight.turnYellow();
         trafficLight.turnGreen();
+
+        trafficLight.startAutomaticCycle();
+        trafficLight.turnOff();
     }
 }

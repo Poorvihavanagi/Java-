@@ -9,5 +9,8 @@ public class CementRunner {
         cement.mixWithWater();
         cement.pour();
         cement.dry();
+
+        cement.setTimer();
+        cement.checkConsistency();
     }
 }

@@ -14,4 +14,8 @@ public class WallMirror implements Mirror {
     public void hangOnWall() {
         System.out.println("Hanging the mirror on the wall securely.");
     }
+    @Override
+    public void polish() {
+        System.out.println("Polishing the wall mirror for a clearer reflection.");
+    }
 }

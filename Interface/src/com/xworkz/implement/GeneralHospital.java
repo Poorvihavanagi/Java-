@@ -14,4 +14,8 @@ public class GeneralHospital implements Hospital {
     public void treatPatient() {
         System.out.println("Treating the patient in the hospital.");
     }
+    @Override
+    public void provideEmergencyCare() {
+        System.out.println("Providing emergency care at the City Hospital.");
+    }
 }

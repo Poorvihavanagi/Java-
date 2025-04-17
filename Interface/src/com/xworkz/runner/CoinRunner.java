@@ -9,5 +9,8 @@ public class CoinRunner {
         coin.flip();
         coin.store();
         coin.exchange();
+
+        coin.clean();
+        coin.inspect();
     }
 }

@@ -9,5 +9,8 @@ public class BuildingRunner {
         building.construct();
         building.demolish();
         building.maintain();
+
+        building.clean();
+        building.secure();
     }
 }

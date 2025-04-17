@@ -10,5 +10,6 @@ public class FoodRunner {
         food.prepare();
         food.serve();
         food.consume();
+        food.store();
     }
 }

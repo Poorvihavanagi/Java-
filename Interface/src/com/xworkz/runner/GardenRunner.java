@@ -9,5 +9,6 @@ public class GardenRunner {
         garden.plantFlowers();
         garden.waterPlants();
         garden.trimPlants();
+        garden.maintainGarden();
     }
 }

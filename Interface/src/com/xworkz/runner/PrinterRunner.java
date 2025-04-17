@@ -9,5 +9,7 @@ public class PrinterRunner {
         printer.print();
         printer.scan();
         printer.cancelJob();
+        printer.connectToNetwork();
+        printer.checkInkLevel();
     }
 }

@@ -17,4 +17,14 @@ public class Skyscraper implements Building {
     public void maintain() {
         System.out.println("Maintaining the skyscraper.");
     }
+    @Override
+    public void clean() {
+        System.out.println("Cleaning the skyscraper.");
+    }
+
+
+    @Override
+    public void secure() {
+        System.out.println("Securing the skyscraper.");
+    }
 }

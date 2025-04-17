@@ -10,6 +10,8 @@ public class BookRunner {
         book.close();
         book.bookmark();
 
+        book.highlightText();
+        book.addNotes();
     }
 
 }

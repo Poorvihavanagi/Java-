@@ -14,4 +14,13 @@ public class IPad implements Tablet {
     public void closeApp() {
         System.out.println("Closing app.");
     }
+    @Override
+    public void restart() {
+        System.out.println("Restarting the iPad.");
+    }
+
+    @Override
+    public void lockScreen() {
+        System.out.println("Locking the iPad screen.");
+    }
 }

@@ -10,5 +10,6 @@ public class StationeryRunner {
         stationery.use();
         stationery.keepInPouch();
         stationery.share();
+        stationery.clean();
     }
 }

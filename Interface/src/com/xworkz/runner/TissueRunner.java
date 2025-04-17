@@ -9,5 +9,8 @@ public class TissueRunner {
         tissue.use();
         tissue.dispose();
         tissue.store();
+
+        tissue.pack();
+        tissue.recycle();
     }
 }

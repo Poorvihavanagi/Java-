@@ -9,5 +9,6 @@ public class LadderRunner {
         ladder.extend();
         ladder.climb();
         ladder.fold();
+        ladder.setHeight();
     }
 }

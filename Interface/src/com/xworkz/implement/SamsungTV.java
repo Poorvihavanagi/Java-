@@ -12,4 +12,13 @@ public class SamsungTV implements Television {
     public void changeChannel() {
         System.out.println("Changing TV channel.");
     }
+    @Override
+    public void adjustVolume() {
+        System.out.println("Adjusting volume on Samsung TV.");
+    }
+
+    @Override
+    public void mute() {
+        System.out.println("Muting the Samsung TV.");
+    }
 }

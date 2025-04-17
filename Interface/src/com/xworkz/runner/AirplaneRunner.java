@@ -9,5 +9,8 @@ public class AirplaneRunner {
         airplane.takeOff();
         airplane.fly();
         airplane.land();
+
+        airplane.startEngines();
+        airplane.shutdownEngines();
     }
 }

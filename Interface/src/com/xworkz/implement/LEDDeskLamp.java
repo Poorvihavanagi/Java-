@@ -14,4 +14,13 @@ public class LEDDeskLamp implements DeskLamp {
     public void turnOff() {
         System.out.println("Turning off the LED desk lamp.");
     }
+    @Override
+    public void reset() {
+        System.out.println("Resetting the LED desk lamp to default settings.");
+    }
+
+    @Override
+    public void store() {
+        System.out.println("Storing the LED desk lamp in a safe place.");
+    }
 }

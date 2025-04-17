@@ -14,4 +14,8 @@ public class Sharpner implements Stationery {
     public void share() {
         System.out.println("Sharing the pen with a friend.");
     }
+    @Override
+    public void clean() {
+        System.out.println("Cleaning the sharpener.");
+    }
 }

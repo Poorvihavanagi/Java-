@@ -14,4 +14,8 @@ public class WallCalendar implements Calendar {
     public void flipPage() {
         System.out.println("Flipping the page of the wall calendar.");
     }
+    @Override
+    public void displayYear() {
+        System.out.println("Overridden: Displaying the year in the wall calendar.");
+    }
 }

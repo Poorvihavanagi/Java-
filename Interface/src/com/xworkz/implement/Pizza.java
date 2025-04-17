@@ -16,4 +16,8 @@ public class Pizza implements Food {
     public void consume(){
         System.out.println("Running consume in pizza");
     }
+    @Override
+    public void store() {
+        System.out.println("Storing pizza in the fridge.");
+    }
 }

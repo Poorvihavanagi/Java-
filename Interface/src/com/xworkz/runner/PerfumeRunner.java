@@ -9,5 +9,7 @@ public class PerfumeRunner {
         perfume.spray();
         perfume.refill();
         perfume.giveFragrance();
+        perfume.checkExpiry();
+        perfume.displayBrand();
     }
 }

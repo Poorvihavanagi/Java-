@@ -9,5 +9,7 @@ public class ProjectorRunner {
         projector.turnOn();
         projector.turnOff();
         projector.showPresentation();
+        projector.adjustBrightness();
+        projector.adjustVolume();
     }
 }

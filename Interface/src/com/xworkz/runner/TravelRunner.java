@@ -9,5 +9,8 @@ public class TravelRunner {
         travel.bookTickets();
         travel.packLuggage();
         travel.startJourney();
+
+        travel.arrangeAccommodation();
+        travel.prepareItinerary();
     }
 }

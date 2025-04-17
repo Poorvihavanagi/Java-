@@ -9,5 +9,6 @@ public class FruitRunner {
         fruit.peel();
         fruit.eat();
         fruit.store();
+        fruit.dispose();
     }
 }

@@ -9,5 +9,6 @@ public class HeadphonesRunner {
         headphones.playMusic();
         headphones.pauseMusic();
         headphones.increaseVolume();
+        headphones.turnOn();
     }
 }

@@ -9,5 +9,8 @@ public class ShopRunner {
         shop.openShop();
         shop.sellItems();
         shop.closeShop();
+
+        shop.applyDiscount();
+        shop.printReceipt();
     }
 }

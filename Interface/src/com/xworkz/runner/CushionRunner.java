@@ -9,5 +9,8 @@ public class CushionRunner {
         cushion.place();
         cushion.fluff();
         cushion.clean();
+
+        cushion.refresh();
+        cushion.store();
     }
 }

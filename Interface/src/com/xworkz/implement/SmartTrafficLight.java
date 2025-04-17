@@ -14,4 +14,13 @@ public class SmartTrafficLight implements TrafficLight {
     public void turnGreen() {
         System.out.println("Green light ON - Vehicles can go.");
     }
+    @Override
+    public void startAutomaticCycle() {
+        System.out.println("Smart traffic light starting automatic cycle.");
+    }
+
+    @Override
+    public void turnOff() {
+        System.out.println("Smart traffic light turned off.");
+    }
 }

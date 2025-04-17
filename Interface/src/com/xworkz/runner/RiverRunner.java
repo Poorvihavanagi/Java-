@@ -9,5 +9,7 @@ public class RiverRunner {
         river.flow();
         river.provideWater();
         river.supportEcosystem();
+        river.flood();
+        river.dryUp();
     }
 }

@@ -9,5 +9,8 @@ public class CandleRunner {
         candle.lightUp();
         candle.melt();
         candle.giveFragrance();
+
+        candle.extinguish();
+        candle.cleanUp();
     }
 }

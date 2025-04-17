@@ -14,4 +14,8 @@ public class FlowerGarden implements Garden {
     public void trimPlants() {
         System.out.println("Trimming the plants in the garden.");
     }
+    @Override
+    public void maintainGarden() {
+        System.out.println("Maintaining the flower garden.");
+    }
 }

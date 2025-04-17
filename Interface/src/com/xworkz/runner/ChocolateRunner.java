@@ -9,5 +9,8 @@ public class ChocolateRunner {
         chocolate.unwrap();
         chocolate.eat();
         chocolate.store();
+
+        chocolate.melt();
+        chocolate.wrapUp();
     }
 }

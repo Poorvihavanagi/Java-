@@ -9,5 +9,7 @@ public class SocialMediaRunner {
         socialMedia.postContent();
         socialMedia.likeContent();
         socialMedia.comment();
+        socialMedia.shareContent();
+        socialMedia.blockUser();
     }
 }

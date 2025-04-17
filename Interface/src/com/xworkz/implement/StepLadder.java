@@ -14,4 +14,8 @@ public class StepLadder implements Ladder {
     public void fold() {
         System.out.println("Folding the step ladder for storage.");
     }
+    @Override
+    public void setHeight() {
+        System.out.println("Adjusting the step ladder to the appropriate height.");
+    }
 }

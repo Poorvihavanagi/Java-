@@ -17,4 +17,13 @@ public class Novel implements Book {
     public void bookmark() {
         System.out.println("Bookmarking the page in the novel.");
     }
+    @Override
+    public void highlightText() {
+        System.out.println("Highlighting important passages in the novel.");
+    }
+
+    @Override
+    public void addNotes() {
+        System.out.println("Adding notes in the margins of the novel.");
+    }
 }

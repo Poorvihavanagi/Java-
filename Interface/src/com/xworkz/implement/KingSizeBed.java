@@ -14,4 +14,14 @@ public class KingSizeBed implements Bed {
     public void cleanBed() {
         System.out.println("Cleaning the king-size bed.");
     }
+
+    @Override
+    public void adjustHeadrest() {
+        System.out.println("Adjusting the headrest of the king-size bed.");
+    }
+
+    @Override
+    public void setBedsideLamp() {
+        System.out.println("Setting the bedside lamp beside the king-size bed.");
+    }
 }
